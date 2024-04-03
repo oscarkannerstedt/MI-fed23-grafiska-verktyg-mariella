@@ -38,3 +38,4 @@ Vi planerar att ha designen i stort sett klart under fredag vecka 1, med tid kva
 ### Signerat av:
 @annkar73 - Anna Karlsen
 @jessworks - Jessika Ljungberg
+@PerRosen63 - Per Rosén

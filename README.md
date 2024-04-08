@@ -26,16 +26,10 @@ Teckensnitt för rubriker och underrubriker är **_Bellefair_**.
 
 För brödtext och citat används **_Josefine Sans_**.
 
-## Marginaler, padding, border radius och radavstånd
-Radavståndet i brödtexten ska vara  
-Marginal för sidinnehåll ska vara  
-Marginal för element ska vara  
-Padding för element ska vara  
-Border radius ska vara 10px på både knappar och andra element för att behålla det mjuka intrycket.
-
 ## Övrigt
 **Knapparna** ska ha ljust grå border i standardläge och mörkt blå border vid hover.  
-Storleken är 120x40 och border 1, 1, 2, 2.
+Storleken är 120x40 och border 1, 1, 2, 2.  
+Om inget skrivits in i inputfälten och ingen av checkboxarna är ikryssade ska skicka-knappen vara disabled.
 
 **I menyn** skrivs menyalternativ/länkar med versaler i svart text.  
 När man hovrar över ett alternativ ska det bli undertruket med border bottom 3px samtidigt som färgen på text och border ändras till mörkt brun, och detta ska även ligga kvar när ett alternativ är valt så man enkelt ser vilken del av sidan som är aktiv.  

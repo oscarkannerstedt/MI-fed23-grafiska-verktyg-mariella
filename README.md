@@ -40,7 +40,8 @@ På startsidan finns en box-text där texten ska vara centrerad i höjd- och sid
 På kontaktsidan har rubriken och formuläret en **dropshadow** i svart i tablet- och desktopläge. Detta ska vara en dubbel dropshadow med både positiva och negativa värden.  
 För mobilversion är det valfritt om man låter detta ligga kvar, men helst inte. 
 
-**Bakgrundsbilden** ska vara fixed i alla format om möjligt (prioritera desktop).
+**Bakgrundsbilden** ska vara fixed i alla format om möjligt (prioritera desktop).  
+Den ska också ha ett filter för att ljusas upp en aning, detta kan eventuellt behöva göras i Photoshop eller liknande för att inte påverka child elements.
 
 Det ljusa lövet på startsidan ska ha en liten animering så det rör sig på valfritt sätt (darrar, skakar, hoppar) och fungera som en pil som man kan klicka på för att skrolla sig nedåt på sidan (för tablet och desktop, uteslut för mobilversion).
 

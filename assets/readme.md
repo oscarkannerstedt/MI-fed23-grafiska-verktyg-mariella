@@ -33,7 +33,8 @@ Om inget skrivits in i inputfälten och ingen av checkboxarna är ikryssade ska 
 
 **I menyn** skrivs menyalternativ/länkar med versaler i svart text.  
 När man hovrar över ett alternativ ska det bli undertruket med border bottom 3px samtidigt som färgen på text och border ändras till mörkt brun, och detta ska även ligga kvar när ett alternativ är valt så man enkelt ser vilken del av sidan som är aktiv.  
-I mobil- och tabletversion _ändras_ menyn till en hamburgermeny som vecklas ut. I övrigt som för desktop att menyns textfärg ändras till mörkt brun, understruket.
+I mobil- och tabletversion _ändras_ menyn till en hamburgermeny som vecklas ut. Till en början består den av tre kvistar/pinnar som vid klick korsas. Detta kryss används sedan för att stänga menyn och återgår då till ursprungsläget.  
+I övrigt som för desktop att menyns textfärg ändras till mörkt brun, understruket.
 
 På startsidan finns en **box-text** där texten ska vara centrerad i höjd- och sidled. 
 
@@ -45,7 +46,9 @@ Den ska också ha ett filter för att ljusas upp en aning, detta kan eventuellt 
 
 **Det ljusa lövet** på startsidan ska ha en liten animering så det rör sig på valfritt sätt (darrar, skakar, hoppar) och fungera som en pil som man kan klicka på för att skrolla sig uppåt eller nedåt på sidan (för tablet och desktop, uteslut för mobilversion).  
 
-**De tre bilderna** på förstasidan ska länka till tänkta kanaler på YouTube och Spotify, samt visar hur appens förstasida ser ut i en telefon. Den mittersta räcker om den öppnar en större version av bilden när man klickar på den, de andra får gärna länka till förstasida YouTube respektive Spotify.
+**De tre bilderna** på förstasidan ska länka till tänkta kanaler på YouTube och Spotify, samt visar hur appens förstasida ser ut i en telefon.  
+Den mittersta, med appbilden, ska vid klick öka i storlek och få en skugga så det ser ut som att den lyfts från bakgrunden samtidigt som den börjar spela upp en ljudfil som anknyter till temat skog och avslappning. Det blir upp till teamet att hitta ett lämpligt ljudklipp som är royaltyfritt. Vid ett andra klick ska ljudet stängas av igen och bilden återgå till normalläget.  
+De andra bilderna får gärna länka till förstasida på YouTube respektive Spotify.
 
 **Footer** med copyright-texten ska finnas i nederkant i alla versioner. Variationer beroende på plattform framgår i designen.  
 Knappar för att länka till App Store och Google Play ligger i mobilversion fixed så de hamnar nere i footern, i tablet- och desktopversion ligger de ovanför footern.

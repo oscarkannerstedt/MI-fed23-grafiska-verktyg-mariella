@@ -43,7 +43,7 @@ För mobilversion är det valfritt om man låter detta ligga kvar, men helst int
 **Bakgrundsbilden** ska vara fixed i alla format om möjligt (prioritera desktop).  
 Den ska också ha ett filter för att ljusas upp en aning, detta kan eventuellt behöva göras i Photoshop eller liknande för att inte påverka child elements.
 
-Det ljusa lövet på startsidan ska ha en liten animering så det rör sig på valfritt sätt (darrar, skakar, hoppar) och fungera som en pil som man kan klicka på för att skrolla sig nedåt på sidan (för tablet och desktop, uteslut för mobilversion).
+Det ljusa lövet på startsidan ska ha en liten animering så det rör sig på valfritt sätt (darrar, skakar, hoppar) och fungera som en pil som man kan klicka på för att skrolla sig uppåt eller nedåt på sidan (för tablet och desktop, uteslut för mobilversion).
 
 Footer med copyright-texten i nederkant.
 

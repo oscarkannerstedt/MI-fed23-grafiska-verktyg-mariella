@@ -33,9 +33,9 @@ Om inget skrivits in i inputfälten och ingen av checkboxarna är ikryssade ska 
 
 **I menyn** skrivs menyalternativ/länkar med versaler i svart text.  
 När man hovrar över ett alternativ ska det bli undertruket med border bottom 3px samtidigt som färgen på text och border ändras till mörkt brun, och detta ska även ligga kvar när ett alternativ är valt så man enkelt ser vilken del av sidan som är aktiv.  
-I mobil- och tabletversion ändras menyn till en hamburgermeny som vecklas ut. I övrigt som för desktop att menyns textfärg ändras till mörkt brun, understruket.
+I mobil- och tabletversion _ändras_ menyn till en hamburgermeny som vecklas ut. I övrigt som för desktop att menyns textfärg ändras till mörkt brun, understruket.
 
-På startsidan finns en box-text där texten ska vara centrerad i höjd- och sidled. 
+På startsidan finns en **box-text** där texten ska vara centrerad i höjd- och sidled. 
 
 På kontaktsidan har rubriken och formuläret en **dropshadow** i svart i tablet- och desktopläge. Detta ska vara en dubbel dropshadow med både positiva och negativa värden.  
 För mobilversion är det valfritt om man låter detta ligga kvar, men helst inte. 
@@ -43,13 +43,14 @@ För mobilversion är det valfritt om man låter detta ligga kvar, men helst int
 **Bakgrundsbilden** ska vara fixed i alla format om möjligt (prioritera desktop).  
 Den ska också ha ett filter för att ljusas upp en aning, detta kan eventuellt behöva göras i Photoshop eller liknande för att inte påverka child elements.
 
-Det ljusa lövet på startsidan ska ha en liten animering så det rör sig på valfritt sätt (darrar, skakar, hoppar) och fungera som en pil som man kan klicka på för att skrolla sig uppåt eller nedåt på sidan (för tablet och desktop, uteslut för mobilversion).
+**Det ljusa lövet** på startsidan ska ha en liten animering så det rör sig på valfritt sätt (darrar, skakar, hoppar) och fungera som en pil som man kan klicka på för att skrolla sig uppåt eller nedåt på sidan (för tablet och desktop, uteslut för mobilversion).  
 
-Footer med copyright-texten i nederkant.
+**De tre bilderna** på förstasidan ska länka till tänkta kanaler på YouTube och Spotify, samt visar hur appens förstasida ser ut i en telefon. Den mittersta räcker om den öppnar en större version av bilden när man klickar på den, de andra får gärna länka till förstasida YouTube respektive Spotify.
 
+**Footer** med copyright-texten ska finnas i nederkant i alla versioner. Variationer beroende på plattform framgår i designen.  
 Knappar för att länka till App Store och Google Play ligger i mobilversion fixed så de hamnar nere i footern, i tablet- och desktopversion ligger de ovanför footern.
 
-Cookie-text är vit mot mörkt blå bakgrund i en oval som klickas bort med en knapp i ljust grå då den tydligt ska avvika från övrig design.
+**Cookie-text** är vit mot mörkt blå bakgrund i en oval som klickas bort med en knapp i ljust grå då den tydligt ska avvika från övrig design.
 
 
 **_Happy cruising!  

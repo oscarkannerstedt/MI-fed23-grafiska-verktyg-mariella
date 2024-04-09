@@ -28,8 +28,8 @@ För brödtext och citat används **_Josefine Sans_**.
 
 ## Övrigt
 
-**Scrollning** ska undvikas i största möjliga mån, vi vill att "startsidan" håller sig inom 100vh i desktop.  
-Gärna också i tablet, i mobil är scrollning emellanåt nödvändigt. 
+**Skrollning** Skrollister ska undvikas på "startsidan", dvs hålla sig inom 100vh i desktop och tablet, detsamma för samtliga "sidor" i desktop.  
+I tablet får skroll förekomma på "undersidor". I mobil får scrollning förekomma överlag. 
 
 **Knapparna** ska ha ljust grå border i standardläge och border enligt design vid hover.  
 Om inget skrivits in i inputfälten och ingen av checkboxarna är ikryssade ska skicka-knappen vara disabled.
@@ -37,7 +37,7 @@ Om inget skrivits in i inputfälten och ingen av checkboxarna är ikryssade ska 
 **I menyn** skrivs menyalternativ/länkar med versaler i svart text.  
 Headern ska ligga fixed i överkant hela tiden i alla versioner.
 I desktop: När man hovrar över ett alternativ ska det bli undertruket med border bottom 3px samtidigt som färgen på text och border ändras till mörkt brun, och detta ska även ligga kvar när ett alternativ är valt så man enkelt ser vilken del av sidan som är aktiv.  
-I mobil- och tabletversion _ändras_ menyn till en hamburgermeny som vecklas ut. Där används sekundärknapparna för menyalternativen med border som ändras vid hover state. Längst ner i menyn ska logon glida, uppdelad, från höger och vänster tills de kombinerats till en komplett logo. Dessutom ska färgerna i logon ändras i detta skede. Se designbild.
+I mobil- och tabletversion _ändras_ menyn till en hamburgermeny som vecklas ut. Där används sekundärknapparna för menyalternativen med border som ändras vid hover state. Längst ner i menyn ska logon glida, uppdelad, från höger och vänster tills de kombinerats till en komplett logo. Se designbild.
 
 På "startsidan" finns en **box-text** där texten ska vara centrerad i höjd- och sidled. 
 

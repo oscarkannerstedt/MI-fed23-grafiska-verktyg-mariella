@@ -12,7 +12,7 @@ Då detta är en prototyp för sidan är det i dagsläget en startsida och en ko
 Sidan ska vara responsiv så det blir lite förändringar mellan mobil, tablet och desktop. Se designbilder för referens.
 
 ## Färgkoder
-Mörkt grön är **#29ef16**  
+Mörkt grön är **#293f16**  
 Ljust grön är **#d6e6bc**  
 Ljust brun är **#e0D9C0**  
 Mörkt brun är **#573e28**  
@@ -32,14 +32,15 @@ Storleken är 120x40 och border 1, 1, 2, 2.
 Om inget skrivits in i inputfälten och ingen av checkboxarna är ikryssade ska skicka-knappen vara disabled.
 
 **I menyn** skrivs menyalternativ/länkar med versaler i svart text.  
-När man hovrar över ett alternativ ska det bli undertruket med border bottom 3px samtidigt som färgen på text och border ändras till mörkt brun, och detta ska även ligga kvar när ett alternativ är valt så man enkelt ser vilken del av sidan som är aktiv.  
-I mobil- och tabletversion _ändras_ menyn till en hamburgermeny som vecklas ut. Till en början består den av tre kvistar/pinnar som vid klick korsas. Detta kryss används sedan för att stänga menyn och återgår då till ursprungsläget.  
-I övrigt som för desktop att menyns textfärg ändras till mörkt brun, understruket.
+I desktop: När man hovrar över ett alternativ ska det bli undertruket med border bottom 3px samtidigt som färgen på text och border ändras till mörkt brun, och detta ska även ligga kvar när ett alternativ är valt så man enkelt ser vilken del av sidan som är aktiv.  
+I mobil- och tabletversion _ändras_ menyn till en hamburgermeny som vecklas ut. Där används sekundärknapparna för menyalternativen med border som ändras vid hover state. Längst ner i menyn ska logon glida, uppdelad, från höger och vänster tills de kombinerats till en komplett logo. Dessutom ska färgerna i logon ändras i detta skede. Se designbild.
 
 På startsidan finns en **box-text** där texten ska vara centrerad i höjd- och sidled. 
 
 På kontaktsidan har rubriken och formuläret en **dropshadow** i svart i tablet- och desktopläge. Detta ska vara en dubbel dropshadow med både positiva och negativa värden.  
 För mobilversion är det valfritt om man låter detta ligga kvar, men helst inte. 
+I mobil och tablet blir kontaktsidan scrollbar.
+Knapparna vid inputfälten är primärknapparna med färgbyte på border vid hover state.
 
 **Bakgrundsbilden** ska vara fixed i alla format om möjligt (prioritera desktop).  
 Den ska också ha ett filter för att ljusas upp en aning, detta kan eventuellt behöva göras i Photoshop eller liknande för att inte påverka child elements.
@@ -55,6 +56,8 @@ Knappar för att länka till App Store och Google Play ligger i mobilversion fix
 
 **Cookie-text** är vit mot mörkt blå bakgrund i en oval som klickas bort med en knapp i ljust grå då den tydligt ska avvika från övrig design.
 
+**Extra i mån av tid**
+Som cursor pointer används lövet från logon med en drop shadow så det lyfts lite från underlaget. Detta ska ersätta den inbyggda pointern och det blir teamets uppgift att välja färger som fungerar mot allt klickbart. För användarvänlighet bör det finnas en switch där man kan välja om man vill ha standard pointer eller den anpassade. Teamet avgör var det är lämpligt att lägga switchen och hur den ska utformas.
 
 **_Happy cruising!  
 önskar besättningen på M/S Mariella_**

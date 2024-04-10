@@ -8,6 +8,7 @@
   padding-inline: 1.5em;
   padding-block: 0.8em;
   font-size: $font-size-s;
+  font-weight: $font-weight-400;
 }
 
 .button-container {
@@ -20,18 +21,17 @@
 .copyright-text {
   display: flex;
   justify-content: center;
-  padding-block: 0.2em;
+  padding-bottom: 0.2em;
+  padding-top: 0.4em;
 }
 
 .google-play-badge {
-  background-color: $dark-brown;
   display: block;
   height: 50px;
   width: 137px;
 }
 
 .app-store-badge {
-  background-color: $dark-brown;
   display: block;
   height: 40px;
   width: 120px;
@@ -47,5 +47,5 @@
 
 .app-store-badge-button:focus,
 .google-play-badge-button:focus {
-  outline: none;
+  outline: 2px solid $light-green;
 }

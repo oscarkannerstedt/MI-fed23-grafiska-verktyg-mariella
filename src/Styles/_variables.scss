@@ -18,13 +18,14 @@ $body-font: 'Josefin Sans', sans-serif;
 
 // FONT SIZES
 
-$font-size-s: 12px;
+$font-size-xs: 12px;
+$font-size-s: 14px;
 $font-size-sm: 16px;
 $font-size-m: 18px;
 $font-size-ml: 24px;
 $font-size-l: 32px;
 $font-size-xl: 64px;
-$font-size-xxl: 96px;
+$font-size-xl: 96px;
 
 // BORDER RADIUS
 
@@ -33,24 +34,6 @@ $border-radius: 10px;
 // SHADOW VARIABLES
 
 $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-// DEBUGGING
-
-div {
-  @if $debugging {
-    outline: 1px solid hotpink;
-    padding: 10px;
-    border-radius: 3px;
-  }
-}
-
-section {
-  @if $debugging {
-    outline: 1px solid green;
-    padding: 15px;
-    border-radius: 5px;
-  }
-}
 
 // Måste fråga gruppen om de har preferenser på nedanstående:
 

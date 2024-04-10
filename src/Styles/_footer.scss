@@ -1,13 +1,13 @@
 .footer {
-  background-color: #573e28;
-  color: #d6e6bc;
-  font-family: "Josefin Sans", sans-serif;
+  background-color: $dark-brown;
+  color: $light-green;
+  font-family: $body-font;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-inline: 1.5em;
   padding-block: 0.8em;
-  font-size: 14px;
+  font-size: $font-size-s;
 }
 
 .button-container {
@@ -24,14 +24,14 @@
 }
 
 .google-play-badge {
-  background-color: #573e28;
+  background-color: $dark-brown;
   display: block;
   height: 50px;
   width: 137px;
 }
 
 .app-store-badge {
-  background-color: #573e28;
+  background-color: $dark-brown;
   display: block;
   height: 40px;
   width: 120px;
@@ -49,13 +49,3 @@
 .google-play-badge-button:focus {
   outline: none;
 }
-
-* {
-  margin: 0;
-}
-
-body {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  min-height: 100vh;
-}/*# sourceMappingURL=styles.css.map */

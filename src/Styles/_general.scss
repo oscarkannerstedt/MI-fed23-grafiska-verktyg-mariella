@@ -5,5 +5,11 @@
 body {
   display: grid;
   grid-template-rows: 1fr auto;
-  min-height: 100vh;
+  min-height: 200vh;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
 }

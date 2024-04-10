@@ -1,0 +1,33 @@
+# Beroenden
+/node_modules
+
+# Byggfiler
+/dist
+/.next
+/.vuepress/dist
+/build
+/out
+
+# Systemfiler
+.DS_Store
+Thumbs.db
+
+# Loggfiler
+*.log
+
+# Miljöfiler
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Redigerar kataloger
+.idea
+.vscode
+*.swp
+
+# Övriga filer och mappar
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -131,7 +131,7 @@ header {
   top: 4.02em;
   bottom: 6em;
   right: -100vw;
-  width: 80vw;
+  width: 100vw;
   background-color: #573e28;
   transition: right 0.3s ease-out;
   padding: 20px;
@@ -160,7 +160,8 @@ header {
   background-color: #daa520;
   border-radius: 10px;
   border: 1px solid #ffffff;
-  margin: 1em;
+  margin-block: 1em;
+  margin-inline: 3em;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   overflow: hidden;

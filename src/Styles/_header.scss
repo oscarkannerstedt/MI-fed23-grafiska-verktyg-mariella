@@ -60,7 +60,7 @@ header {
   top: 4.02em;
   bottom: 6em;
   right: -100vw;
-  width: 80vw;
+  width: 100vw;
   background-color: $dark-brown;
   transition: right 0.3s ease-out;
   padding: 20px;
@@ -89,7 +89,8 @@ header {
   background-color: $goldenrod;
   border-radius: $border-radius-l;
   border: 1px solid $white;
-  margin: 1em;
+  margin-block: 1em;
+  margin-inline: 3em;
   font-family: $body-font;
   text-transform: uppercase;
   overflow: hidden;

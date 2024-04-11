@@ -9,7 +9,9 @@
   padding-block: 0.8em;
   font-size: $font-size-s;
   font-weight: $font-weight-400;
-  height: 5em;
+  height: 5.5em;
+  position: sticky;
+  bottom: 0;
 }
 
 .button-container {

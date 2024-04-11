@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .footer {
   background-color: #573e28;
   color: #d6e6bc;
@@ -10,7 +9,9 @@
   padding-block: 0.8em;
   font-size: 14px;
   font-weight: 400;
-  height: 5em;
+  height: 5.5em;
+  position: sticky;
+  bottom: 0;
 }
 
 .button-container {
@@ -76,15 +77,15 @@ html {
 
 header {
   display: flex;
-  justify-content: space-between; /* Detta separerar logotypen och menyn */
+  justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
   background-color: #e0d9c0;
   color: #573e28;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   height: 4em;
+  width: 100%;
 }
 
 .hamburger-menu {
@@ -98,6 +99,7 @@ header {
   border: none;
   z-index: 2000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-right: 1em;
 }
 
 .hamburger-menu span {
@@ -106,26 +108,28 @@ header {
   height: 5px;
   border-radius: 5px;
   background-color: #573e28;
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Animeringseffekt */
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .menu-toggle:checked + .hamburger-menu span:nth-child(1) {
-  transform: translateY(12px) rotate(45deg); /* Flyttar första span diagonalt uppåt */
+  transform: translateY(12px) rotate(45deg);
 }
 
 .menu-toggle:checked + .hamburger-menu span:nth-child(2) {
-  opacity: 0; /* Gömmer andra span */
+  opacity: 0;
 }
 
 .menu-toggle:checked + .hamburger-menu span:nth-child(3) {
-  transform: translateY(-13px) rotate(-45deg); /* Flyttar tredje span diagonalt nedåt */
+  transform: translateY(-13px) rotate(-45deg);
 }
 
 .menu {
   display: flex;
+  flex-direction: column;
   position: fixed;
-  top: 4em;
-  bottom: 5em;
+  justify-content: space-between;
+  top: 4.02em;
+  bottom: 6em;
   right: -100vw;
   width: 80vw;
   background-color: #573e28;
@@ -159,35 +163,78 @@ header {
   margin: 1em;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
-  position: relative;
   overflow: hidden;
-}
-
-.menu li a:hover {
-  color: #573e28;
 }
 
 .menu li a::after {
   content: "";
-  display: block;
-  width: 0;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  right: 50%;
   height: 3px;
   background-color: #573e28;
-  transition: width 0.3s ease;
-  position: absolute;
-  bottom: 0.8em;
-  left: 50%;
-  transform: translateX(-50%);
+  transition: all 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: center center;
 }
 
-.menu li a:hover::after {
-  width: 6em;
+.menu li a.active {
+  color: #573e28;
 }
 
-body.menu-active {
-  background-color: #293f16;
+.menu li a.active::after {
+  left: 0;
+  right: 0;
+  transform: scaleX(1);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 4em;
+  left: 0;
+  right: 0;
+  bottom: 6.14em;
+  background-color: rgba(41, 63, 22, 0.9);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  z-index: 999;
+}
+
+body.menu-active .overlay {
+  display: block;
 }
 
 .logo-text-menu {
-  color: #d6e6bc;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.logo-image {
+  margin-left: 1em;
+}
+
+.menu li a span {
+  position: relative;
+  display: inline-block;
+}
+
+.menu li a span::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #573e28;
+  transition: all 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: center center;
+}
+
+.menu li a.active span::after {
+  transform: scaleX(1);
 }/*# sourceMappingURL=styles.css.map */

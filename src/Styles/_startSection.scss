@@ -106,11 +106,22 @@
 }
 
 @media (min-width: 768px) {
-  .start-section-text-container {
+  .start-section {
+    flex-direction: row-reverse;
+  }
+  .start-section .start-section-text-container {
     height: calc(100vh - 5.6em - 5.5em);
+    width: 30vw;
   }
 
-  .start-section-wrapper {
+  .start-section .start-section-wrapper {
     height: calc(100vh - 5.6em - 5.5em);
+    background-image: none;
+    background-color: $dark-green;
+    width: 70vw;
+  }
+
+  .start-section .start-section-heading-container {
+    box-shadow: $box-shadow;
   }
 }

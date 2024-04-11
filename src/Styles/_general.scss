@@ -19,3 +19,11 @@ body {
   flex: 1;
   top: 4em;
 }
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    position: relative;
+    flex: 1;
+    top: 5.6em;
+  }
+}

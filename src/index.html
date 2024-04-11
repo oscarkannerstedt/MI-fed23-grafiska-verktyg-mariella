@@ -1,84 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bellefair&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet" />
-  <title></title>
-</head>
-
-<body>
-  <header>
-    <div>
-      <!-- Change the size of logo in css -->
-      <img src="/assets/logotype.svg" alt="Forrest logo" width="100" height="50" />
-    </div>
-    <!-- This should bee the hamburger menu -->
-    <div>
-      <button>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <!-- This should be showed in desktop design & showed when click on hamburger menu on mobile design -->
-    <!-- href should be linked to the right section on page -->
-    <nav>
-      <ul>
-        <li><a href="#">Start</a></li>
-        <li><a href="#">Om for rest</a></li>
-        <li><a href="#">Om oss</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main">
-    <div id="leftMain">
-      <div id="topLeft">top</div>
-      <div id="bottomLeft">bottom</div>
-    </div>
-    <div id="rightMain">
-      <div id="topRight">top</div>
-      <div id="BottomRight">
-        <img src="img1.jpg">
-        <img src="img2.jpg">
-        <img src="img3.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-image">
+        <img src="/assets/logotype.svg" alt="Logo" />
       </div>
-    </div>
-  </main>
+      <input type="checkbox" id="menuToggle" class="menu-toggle" />
+      <label for="menuToggle" class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#"><span>Start</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Om For Rest</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Om oss</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Kontakt</span></a>
+          </li>
+        </ul>
+        <div class="logo-text-menu">
+          <img src="/assets/logotype_inv.svg" alt="Logo" />
+        </div>
+      </nav>
+    </header>
+    <div class="content-wrapper">
+      <!-- This is the cookie bar -->
+      <!-- <div>
+        <p>
+          Den här webbplatsen använder cookies. Genom att att fortsätta att
+          surfa på den här webbplatsen godkänner du vår användning av cookies.
+        </p>
+        <button>Ok</button>
+      </div> -->
 
-  <!-- This is the cookie bar -->
-  <!-- <div>
-      <p>
-        Den här webbplatsen använder cookies. Genom att att fortsätta att surfa
-        på den här webbplatsen godkänner du vår användning av cookies.
-      </p>
-      <button>Ok</button>
-    </div> -->
+      <section id="startSection" class="start-section">
+        <section class="start-section-wrapper">
+          <div id="startSectionHeading" class="start-section-heading-container">
+            <h1>For Rest</h1>
+            <p>Skogsbadet som alltid är nära</p>
+          </div>
 
-  <footer class="footer">
-    <div class="button-container">
-      <button class="app-store-badge-button">
-        <img class="app-store-badge" src="/assets/Download_on_the_App_Store_Badge_SE_RGB_blk_100317.svg"
-          alt="for download For Rest app in App store" />
-      </button>
-      <button class="google-play-badge-button">
-        <img class="google-play-badge" src="/assets/google-play-badge.png"
-          alt="for download For Rest app in Google play" />
-      </button>
-    </div>
+          <!-- Add alt text to images -->
+          <div id="mobileImagesContainer" class="mobile-images-container">
+            <img
+              src="/assets/spotify-mock-portrait_h300.png"
+              alt=""
+              width="98"
+              height="197"
+            />
+            <img
+              src="/assets/forrest-portrait_h300.png"
+              alt=""
+              width="98"
+              height="197"
+            />
+            <img
+              src="/assets/youtube_mock-portrait_h300.png"
+              alt=""
+              width="98"
+              height="197"
+            />
+          </div>
+        </section>
+        <section class="start-section-text-wrapper">
+          <div class="start-section-text-container">
+            <div class="app-podcast-youtube-text-container">
+              <p>
+                App, podcast och Youtube-<br />
+                kanal om skogsbad!
+              </p>
+            </div>
 
-    <span class="copyright-text">
-      &copy; All right reserved | For Rest Ab | 2024
-    </span>
-  </footer>
+            <div class="harmoni-stillhet-frid-container">
+              <p>Harmoni | Stillhet | Frid</p>
+            </div>
 
+            <div class="quote-container">
+              <blockquote class="block-quote">
+                <p>"Appen For Rest förändrade mitt trädlösa liv!"</p>
+              </blockquote>
+              <p class="quote-author">- Nisse Gandhi</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- 
+      <section>
+        <div>
+          <h2>Kontaktuppgifter</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna
+            augue, finibus a tristique sit amet, dapibus at dui. Quisque neque
+            metus, tempus vitae rhoncus eget, aliquet in massa. Aliquam gravida
+            sodales suscipit.
+          </p>
+        </div>
+
+        <span class="copyright-text">
+          &copy; All right reserved | For Rest Ab | 2024
+        </span>
+
+    
 
     <section class="contact">
       <!-- This is the contact,s inforation -->
@@ -97,34 +139,49 @@
   
              <label class="contact-label" id="email" for="email">E-mail</label>
               <input class="input1" type="text" name="email" placeholder="E-mail">
-
-           <!-- This is the checkbox & text -->
-            <div class="checkbox">
-              <label>
-                <input class="check-box" type="checkbox" name="box">Jag vill ha mer info om era produkter    
-              </label><br>
-              <label >
-                <input class="check-box" type="checkbox" name="box">Jag vill ta emot ert nyhetsbrev 
-              </label>
-            </div>  
-            <!-- This is the button -->
-            <div class="button">
-             <button class="button-send" type="button">Skicka</button>
-             <button class="button-cancel" type="button">Avbryt</button>
-            </div>
-          </form>   
-        </div>
-      </section>
-        <!-- This is the information -->           
+        <section>
+              <!-- This is the input -->         
+              <div class="button">
+                <button class="button-send" type="button">Skicka</button>
+                <button class="button-cancel" type="button">Avbryt</button>
+              </div>
+            </form>
+          </div>
+        </section>
+ 
         <div class="contact-info">
-           <h4 class="info-title">For Rest</h4>
-            <ul class="list-info">
-                <li>P.O. Box 123 45 Malta</li>
-                <li>+356 12 345 678 90 </li>
-                <li>hello@forrest.com</li>
-              </ul>
+          <h4 class="info-title">For Rest</h4>
+          <ul class="list-info">
+            <li>P.O. Box 123 45 Malta</li>
+            <li>+356 12 345 678 90</li>
+            <li>hello@forrest.com</li>
+          </ul>
         </div>
-    </section>
-</body>
+      </section> -->
+    </div>
+    <footer class="footer">
+      <div class="button-container">
+        <button class="app-store-badge-button">
+          <img
+            class="app-store-badge"
+            src="/assets/Download_on_the_App_Store_Badge_SE_RGB_blk_100317.svg"
+            alt="for download For Rest app in App store"
+          />
+        </button>
+        <button class="google-play-badge-button">
+          <img
+            class="google-play-badge"
+            src="/assets/google-play-badge.png"
+            alt="for download For Rest app in Google play"
+          />
+        </button>
+      </div>
 
+      <span class="copyright-text">
+        &copy; All right reserved | For Rest Ab | 2024
+      </span>
+    </footer>
+    <div class="overlay"></div>
+    <script src="/src/js/toggle-menu.js"></script>
+  </body>
 </html>

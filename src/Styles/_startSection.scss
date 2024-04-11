@@ -1,0 +1,116 @@
+.start-section {
+  display: flex;
+  flex-direction: column;
+
+  .start-section-wrapper {
+    background-image: url(/assets/skogsbad_blur.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 4em - 5.5em);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .start-section-heading-container {
+    background-color: rgba($dark-green, 0.97);
+    border-radius: $border-radius-l;
+    box-sizing: border-box;
+    font-family: $header-font;
+    font-weight: $header-font-weight;
+    color: $light-green;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 1em;
+
+    h1 {
+      font-size: $font-size-xl;
+      line-height: 73px;
+      font-weight: $header-font-weight;
+    }
+
+    p {
+      font-size: 30px;
+      line-height: 41px;
+    }
+  }
+
+  .mobile-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 0 10px;
+    }
+  }
+
+  .start-section-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/skogsbad_blur.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 4em - 5.5em);
+    margin-bottom: 5.5em;
+
+    .app-podcast-youtube-text-container {
+      background-color: $light-green;
+      border-radius: $border-radius-l;
+      padding: 20px;
+      text-align: center;
+      font-family: $body-font;
+      font-size: 20px;
+      width: 80vw;
+      margin-block: 1em;
+    }
+
+    .harmoni-stillhet-frid-container {
+      background-color: rgba($dark-green, 0.95);
+      border-radius: $border-radius-l;
+      padding: 20px;
+      text-align: center;
+      font-family: $header-font;
+      font-size: 28px;
+      color: $light-green;
+      width: 80vw;
+      margin-block: 1em;
+    }
+
+    .quote-container {
+      background-color: $light-green;
+      border-radius: $border-radius-l;
+      padding: 20px;
+      font-size: 20px;
+      font-family: $body-font;
+      font-weight: $font-weight-400;
+      width: 80vw;
+      margin-block: 1em;
+
+      .block-quote {
+        margin-left: 20px;
+        line-height: 30px;
+      }
+      .quote-author {
+        display: flex;
+        flex-direction: row-reverse;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .start-section-text-container {
+    height: calc(100vh - 5.6em - 5.5em);
+  }
+
+  .start-section-wrapper {
+    height: calc(100vh - 5.6em - 5.5em);
+  }
+}

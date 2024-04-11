@@ -144,6 +144,8 @@ body.menu-active .overlay {
 
 .logo-image {
   margin-left: 1em;
+  width: 100px;
+  height: 50px;
 }
 
 .menu li a span {
@@ -166,4 +168,27 @@ body.menu-active .overlay {
 
 .menu li a.active span::after {
   transform: scaleX(1);
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 5.6em;
+  }
+  .menu {
+    width: 55vw;
+    top: 5.61em;
+  }
+
+  .menu li a {
+    margin-block: 1.3em;
+    margin-inline: 8em;
+  }
+
+  .logo-text-menu img {
+    height: 3.4em;
+  }
+
+  .logo-image img {
+    height: 3.4em;
+  }
 }

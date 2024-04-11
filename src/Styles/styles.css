@@ -228,9 +228,12 @@ body.menu-active .overlay {
   display: flex;
   justify-content: center;
   margin-bottom: 2em;
+  width: 100px;
+  height: 50px;
+  margin-inline: auto;
 }
 
-.logo-image {
+.logo-image img {
   margin-left: 1em;
   width: 100px;
   height: 50px;
@@ -275,6 +278,7 @@ body.menu-active .overlay {
   }
   .logo-image img {
     height: 3.4em;
+    width: 100%;
   }
 }
 .start-section {

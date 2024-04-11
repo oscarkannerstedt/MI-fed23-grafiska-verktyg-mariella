@@ -2,8 +2,20 @@
   margin: 0;
 }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  position: relative;
+  flex: 1;
+  top: 4em;
 }

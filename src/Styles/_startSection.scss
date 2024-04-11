@@ -1,126 +1,106 @@
 .start-section {
-    height: 80vh;
+  display: flex;
+  flex-direction: column;
+
+  .start-section-wrapper {
     background-image: url(/assets/skogsbad_blur.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
+    height: calc(100vh - 4em - 5.5em);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .start-section-heading-container {
+    background-color: rgba($dark-green, 0.97);
+    border-radius: $border-radius-l;
+    box-sizing: border-box;
+    font-family: $header-font;
+    font-weight: $header-font-weight;
+    color: $light-green;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 1em;
+
+    h1 {
+      font-size: $font-size-xl;
+      line-height: 73px;
+      font-weight: $header-font-weight;
+    }
+
+    p {
+      font-size: 30px;
+      line-height: 41px;
+    }
+  }
+
+  .mobile-images-container {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .start-section-wrapper {
-        position: relative;
-        width: 90%;
-        height: 100%;
+    img {
+      margin: 0 10px;
+    }
+  }
+
+  .start-section-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/skogsbad_blur.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 4em - 5.5em);
+    margin-bottom: 5.5em;
+
+    .app-podcast-youtube-text-container {
+      background-color: $light-green;
+      border-radius: $border-radius-l;
+      padding: 20px;
+      text-align: center;
+      font-family: $body-font;
+      font-size: 20px;
+      width: 80vw;
+      margin-block: 1em;
     }
 
-    .start-section-heading-container {
-        width: 90%;
-        height: 220px;
-        position: absolute;
-        background-color: rgba($dark-brown, 0.97);
-        top: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: $border-radius;
-        box-sizing: border-box;
-        font-family: $header-font;
-        font-weight: $header-font-weight;
-        color: $light-green;
-        padding: 20px;
+    .harmoni-stillhet-frid-container {
+      background-color: rgba($dark-green, 0.95);
+      border-radius: $border-radius-l;
+      padding: 20px;
+      text-align: center;
+      font-family: $header-font;
+      font-size: 28px;
+      color: $light-green;
+      width: 80vw;
+      margin-block: 1em;
+    }
+
+    .quote-container {
+      background-color: $light-green;
+      border-radius: $border-radius-l;
+      padding: 20px;
+      font-size: 20px;
+      font-family: $body-font;
+      font-weight: $font-weight-400;
+      width: 80vw;
+      margin-block: 1em;
+
+      .block-quote {
+        margin-left: 20px;
+        line-height: 30px;
+      }
+      .quote-author {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h1 {
-            font-size: $font-size-xl;
-            line-height: 73px;
-            
-        }
-
-        p {
-            font-size: 30px;
-            line-height: 41px;
-        }
+        flex-direction: row-reverse;
+        line-height: 20px;
+      }
     }
-
-    .mobile-images-container {
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            margin: 0 10px;
-        }
-    }
-
-    .start-section-text-container {
-        background-image: url(/assets/skogsbad_blur.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-        top: calc(100%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-weight: $font-weight-400;
-
-        .app-podcast-youtube-text-container {
-            position: absolute;
-            width: 75%;
-            background-color: $light-green;
-            border-radius: $border-radius;
-            padding: 20px;
-            text-align: center;
-            font-family: $body-font;
-            font-size: 20px;
-            top: 10%;
-        }
-
-        .harmoni-stillhet-frid-container {
-            position: absolute;
-            width: 75%;
-            top: 30%;
-            background-color: rgba($dark-green, 0.95);
-            border-radius: $border-radius;
-            padding: 20px;
-            text-align: center;
-            font-family: $header-font;
-            font-size: 28px;
-            color: $light-green;
-        }
-
-        .quote-container {
-            position: relative;
-            width: 75%;
-            top: 10%;
-            background-color: $light-green;
-            border-radius: $border-radius;
-            padding: 20px;
-            font-size: 20px;
-            font-family: $body-font;
-            font-weight: $font-weight-400;
-            
-
-            .block-quote {
-                margin-left: 20px;
-                line-height: 30px;
-            }
-            .quote-author {
-                position: absolute;
-                right: 20px;
-                line-height: 20px;
-            }
-
-        }
-    }
-
+  }
 }

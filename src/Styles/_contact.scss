@@ -1,0 +1,128 @@
+
+.contact{
+    
+    display: grid;
+    place-items: center; 
+}
+
+.contact-titel{
+    background-color:#293f16;
+    border:none;
+    color:#d6e6bc;
+    border-radius: 10px;
+    font-weight: 400;
+    font-family:$header-font;
+    font-size: $font-size-l;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    justify-content: center;
+    margin: 10px 20px 10px;
+    
+}
+
+
+.contact-text1{
+    background-color:#293f16;
+    color: #d6e6bc;
+    font-family: $body-font;
+    font-size: $font-size-xs;
+    border: none;
+    border-radius: 10px;
+    padding-left:1em;
+    width: 200px;
+    padding: 20px;
+    margin: 10px 20px 10px;
+   
+}
+
+
+.contact-details{
+    background-color:#293f16;
+    color:#d6e6bc;
+    border: none;
+    border-radius: 10px;
+    padding-left: 2em;
+    font-size: $font-size-xs;
+    font-family: $body-font;
+    width: 200px;
+    padding: 20px;
+    margin: 10px 20px 10px;  
+    
+}
+
+.contact-label{
+    padding-right: 5px; 
+               
+}
+#email{
+    margin-right: 13px;
+
+}
+
+.input1{
+   margin-bottom: 5px;
+    background-color: #d6e6bc;
+    border: none;
+    border-radius: 5px;    
+}
+  
+
+.button{
+    text-align: center;
+    margin-top: 15px;    
+}
+
+.button-send{
+    background-color: #daa520;
+    font-family: $body-font;
+    border: none;
+    border-radius: 10px;
+    margin-right: 15px;
+    padding: 10px 18px 10px ;    
+}
+
+.button-cancel{
+    background-color: #daa520;
+    font-family: $body-font;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px 10px ;
+    margin-left: 15px;    
+} 
+
+.checkbox{
+    margin-top: 15px;   
+}
+
+.check-box{
+    margin-right: 10px;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 10px;        
+}
+
+.info-title{
+    padding-left:  10px;
+
+}
+
+.contact-info{
+    background-color:#293f16;
+    font-family: $body-font;
+    color: #d6e6bc;
+    font-size: $font-size-s; 
+    border: none;
+    border-radius: 10px;
+    padding-left:  10px; 
+    width: 220px;
+    padding: 20px;
+    margin: 10px 20px 10px;
+    line-height: 1.5;            
+}
+
+.list-info{
+    list-style-type: none;
+    padding-left: 10px; 
+}

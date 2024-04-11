@@ -1,14 +1,14 @@
 .footer {
-  background-color: #573e28;
-  color: #d6e6bc;
-  font-family: "Josefin Sans", sans-serif;
+  background-color: $dark-brown;
+  color: $light-green;
+  font-family: $body-font;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-inline: 1.5em;
   padding-block: 0.8em;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: $font-size-s;
+  font-weight: $font-weight-400;
 }
 
 .button-container {
@@ -47,15 +47,5 @@
 
 .app-store-badge-button:focus,
 .google-play-badge-button:focus {
-  outline: 2px solid #d6e6bc;
+  outline: 2px solid $light-green;
 }
-
-* {
-  margin: 0;
-}
-
-body {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  min-height: 100vh;
-}/*# sourceMappingURL=styles.css.map */

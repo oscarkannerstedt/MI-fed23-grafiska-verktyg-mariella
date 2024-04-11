@@ -10,7 +10,6 @@
   font-size: 14px;
   font-weight: 400;
   height: 5.5em;
-  position: sticky;
   bottom: 0;
 }
 
@@ -57,16 +56,24 @@
   margin: 0;
 }
 
-body {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  min-height: 200vh;
-}
-
 body,
 html {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.content-wrapper {
+  position: relative;
+  flex: 1;
+  top: 4em;
 }
 
 .header,

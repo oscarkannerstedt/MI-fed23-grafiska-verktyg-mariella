@@ -104,3 +104,13 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .start-section-text-container {
+    height: calc(100vh - 5.6em - 5.5em);
+  }
+
+  .start-section-wrapper {
+    height: calc(100vh - 5.6em - 5.5em);
+  }
+}

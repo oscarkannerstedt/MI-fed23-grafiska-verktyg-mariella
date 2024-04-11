@@ -225,6 +225,8 @@ body.menu-active .overlay {
 
 .logo-image {
   margin-left: 1em;
+  width: 100px;
+  height: 50px;
 }
 
 .menu li a span {
@@ -249,6 +251,25 @@ body.menu-active .overlay {
   transform: scaleX(1);
 }
 
+@media (min-width: 768px) {
+  header {
+    height: 5.6em;
+  }
+  .menu {
+    width: 55vw;
+    top: 5.61em;
+  }
+  .menu li a {
+    margin-block: 1.3em;
+    margin-inline: 8em;
+  }
+  .logo-text-menu img {
+    height: 3.4em;
+  }
+  .logo-image img {
+    height: 3.4em;
+  }
+}
 .start-section {
   display: flex;
   flex-direction: column;
@@ -344,4 +365,13 @@ body.menu-active .overlay {
   display: flex;
   flex-direction: row-reverse;
   line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .start-section-text-container {
+    height: calc(100vh - 5.6em - 5.5em);
+  }
+  .start-section-wrapper {
+    height: calc(100vh - 5.6em - 5.5em);
+  }
 }/*# sourceMappingURL=styles.css.map */

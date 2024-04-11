@@ -1,7 +1,53 @@
-.startSection {
+.start-section {
     height: 80vh;
     background-image: url(/assets/skogsbad_blur.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .start-section-heading-container {
+        width: 90%;
+        height: 220px;
+        position: absolute;
+        background-color: rgba($dark-brown, 0.97);
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: $border-radius;
+        box-sizing: border-box;
+        font-family: $header-font;
+        font-weight: $header-font-weight;
+        color: $light-green;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: $font-size-xl;
+            line-height: 73px;
+            
+        }
+
+        p {
+            font-size: 30px;
+            line-height: 41px;
+        }
+    }
+
+    .mobile-images-container {
+        position: absolute;
+        bottom: 5%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            margin: 0 10px;
+            width: auto;
+        }
+    }
 }

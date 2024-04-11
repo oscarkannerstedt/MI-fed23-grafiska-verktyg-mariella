@@ -47,7 +47,7 @@
 
     .mobile-images-container {
         position: absolute;
-        bottom: 5%;
+        bottom: 10%;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -60,9 +60,13 @@
     }
 
     .start-section-text-container {
+        background-image: url(/assets/skogsbad_blur.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
         position: absolute;
-        width: 80%;
-        top: calc(100% + 20px);
+        width: 100%;
+        top: calc(100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -71,19 +75,20 @@
 
         .app-podcast-youtube-text-container {
             position: absolute;
-            width: 90%;
+            width: 75%;
             background-color: $light-green;
             border-radius: $border-radius;
             padding: 20px;
             text-align: center;
             font-family: $body-font;
             font-size: 20px;
+            top: 10%;
         }
 
         .harmoni-stillhet-frid-container {
             position: absolute;
-            width: 90%;
-            top: 100px;
+            width: 75%;
+            top: 30%;
             background-color: rgba($dark-green, 0.95);
             border-radius: $border-radius;
             padding: 20px;
@@ -95,8 +100,8 @@
 
         .quote-container {
             position: relative;
-            width: 90%;
-            top: 200px;
+            width: 75%;
+            top: 10%;
             background-color: $light-green;
             border-radius: $border-radius;
             padding: 20px;
@@ -114,6 +119,7 @@
                 right: 20px;
                 line-height: 20px;
             }
+
         }
     }
 

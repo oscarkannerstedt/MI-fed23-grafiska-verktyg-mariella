@@ -1,23 +1,39 @@
 
-.contact{
-    
+/*.contact{
+    background-image: url(/assets/skogsbad_blur.jpg);
+    background-size: cover;
+    background-position: center;
     display: grid;
     place-items: center; 
+}*/
+
+.page1{
+    background-image: url(/assets/skogsbad_blur.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 4em - 5.5em);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -5.5em
 }
 
 .contact-titel{
+   
     background-color:#293f16;
     border:none;
     color:#d6e6bc;
     border-radius: 10px;
     font-weight: 400;
     font-family:$header-font;
-    font-size: $font-size-l;
-    text-align: center;
-    width: 200px;
+    font-size: $font-size-xl;
+    text-align: center;    
     padding: 20px;
     justify-content: center;
     margin: 10px 20px 10px;
+    width: 80vw;
+    
     
 }
 
@@ -26,15 +42,30 @@
     background-color:#293f16;
     color: #d6e6bc;
     font-family: $body-font;
-    font-size: $font-size-xs;
+    font-size: $font-size-sm;
     border: none;
     border-radius: 10px;
     padding-left:1em;
-    width: 200px;
     padding: 20px;
     margin: 10px 20px 10px;
-   
+    width: 80vw;
+    font-weight: 300; 
+    line-height: 20px;       
 }
+
+.page2{
+    
+    background-image: url(/assets/skogsbad_blur.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(120vh - 4em - 5.5em);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
 
 
 .contact-details{
@@ -45,9 +76,13 @@
     padding-left: 2em;
     font-size: $font-size-xs;
     font-family: $body-font;
-    width: 200px;
     padding: 20px;
-    margin: 10px 20px 10px;  
+    font-weight: 400; 
+    margin-bottom: 10px;
+    width: 80vw; 
+    text-align: center;
+    margin-block: 1em;
+    
     
 }
 
@@ -57,6 +92,8 @@
 }
 #email{
     margin-right: 13px;
+    
+    
 
 }
 
@@ -70,7 +107,7 @@
 
 .button{
     text-align: center;
-    margin-top: 15px;    
+    margin-top: 10px;    
 }
 
 .button-send{
@@ -91,12 +128,22 @@
     margin-left: 15px;    
 } 
 
+.label-box1{
+    margin-left: 38px;
+    margin-top: 20px;
+    line-height: 3;
+}
+
+.label-box{
+    line-height: 2; 
+}
 .checkbox{
-    margin-top: 15px;   
+    margin-top: 15px;
+     
 }
 
 .check-box{
-    margin-right: 10px;
+    padding-right:10px;
     top: 0;
     left: 0;
     height: 10px;
@@ -116,13 +163,21 @@
     border: none;
     border-radius: 10px;
     padding-left:  10px; 
-    width: 200px;
     padding: 20px;
-    margin: 10px 20px 10px;
-    line-height: 1.5;            
+    font-weight: 400;
+    line-height: 1.5; 
+    text-align: center;
+    width: 80vw; 
+    margin-block: 1em; 
+    margin-top: -6em;         
 }
 
 .list-info{
     list-style-type: none;
     padding-left: 10px; 
+}
+
+@media (min-width: 768px){
+   
+
 }

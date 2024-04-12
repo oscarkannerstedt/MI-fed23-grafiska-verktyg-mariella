@@ -48,6 +48,10 @@
     }
   }
 
+  .quote-container-mobile {
+    display: none;
+  }
+
   .start-section-text-container {
     display: flex;
     flex-direction: column;
@@ -80,9 +84,6 @@
       color: $light-green;
       width: 80vw;
       margin-block: 1em;
-    }
-    .quote-container-mobile {
-      display: none;
     }
 
     .quote-container {
@@ -151,6 +152,10 @@
     .start-section-text-container
     .harmoni-stillhet-frid-container {
     width: 60%;
+  }
+
+  .start-section .quote-container-mobile {
+    display: block;
   }
 
   .start-section .start-section-text-container .quote-container {

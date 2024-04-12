@@ -352,6 +352,9 @@ body.menu-active .overlay {
 .start-section .mobile-images-container img {
   margin: 0 10px;
 }
+.start-section .quote-container-mobile {
+  display: none;
+}
 .start-section .start-section-text-container {
   display: flex;
   flex-direction: column;
@@ -383,9 +386,6 @@ body.menu-active .overlay {
   color: #d6e6bc;
   width: 80vw;
   margin-block: 1em;
-}
-.start-section .start-section-text-container .quote-container-mobile {
-  display: none;
 }
 .start-section .start-section-text-container .quote-container {
   background-color: #d6e6bc;
@@ -441,6 +441,9 @@ body.menu-active .overlay {
   }
   .start-section .start-section-text-container .harmoni-stillhet-frid-container {
     width: 60%;
+  }
+  .start-section .quote-container-mobile {
+    display: block;
   }
   .start-section .start-section-text-container .quote-container {
     display: none;

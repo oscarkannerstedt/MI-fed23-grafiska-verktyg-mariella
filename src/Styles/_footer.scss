@@ -56,6 +56,10 @@
   outline: 2px solid $light-green;
 }
 
+.desktop-leaf-image {
+  display: none;
+}
+
 /* =======================
         Ipad design
    ======================= */
@@ -83,5 +87,34 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .desktop-leaf-image {
+    display: none;
+  }
+}
+
+/* =======================
+      Desktop Design
+   ======================= */
+
+@media (min-width: 1000px) {
+  .footer {
+    height: 50px;
+
+    button {
+      display: none;
+    }
+  }
+
+  .desktop-leaf-button {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+
+  .desktop-leaf-image {
+    display: block;
+    transform: rotate(180deg);
   }
 }

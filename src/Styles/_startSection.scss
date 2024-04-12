@@ -81,6 +81,9 @@
       width: 80vw;
       margin-block: 1em;
     }
+    .quote-container-mobile {
+      display: none;
+    }
 
     .quote-container {
       background-color: $light-green;
@@ -110,13 +113,25 @@
     flex-direction: row-reverse;
   }
   .start-section .start-section-text-container {
-    height: calc(100vh - 5.6em - 6.2em);
+    height: calc(100vh - 5.6em - 6em);
     width: 30vw;
     margin-bottom: 0;
   }
 
+  .start-section .quote-container-mobile {
+    background-color: $light-green;
+    border-radius: $border-radius-l;
+    padding: 20px;
+    font-size: 18px;
+    font-family: $body-font;
+    font-weight: $font-weight-400;
+    width: 30vw;
+    height: 10vh;
+    margin-block: 1em;
+  }
+
   .start-section .start-section-wrapper {
-    height: calc(100vh - 5.6em - 6.2em);
+    height: calc(100vh - 5.6em - 6em);
     background-image: none;
     background-color: $dark-green;
     width: 70vw;
@@ -139,6 +154,6 @@
   }
 
   .start-section .start-section-text-container .quote-container {
-    width: 60%;
+    display: none;
   }
 }

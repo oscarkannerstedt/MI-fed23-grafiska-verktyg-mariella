@@ -22,6 +22,7 @@ body {
 
 @media (min-width: 768px) {
   .content-wrapper {
+    height: calc(100vh - 5.6em - 6em);
     position: relative;
     flex: 1;
     top: 5.6em;

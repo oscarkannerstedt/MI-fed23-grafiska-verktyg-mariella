@@ -192,3 +192,48 @@ body.menu-active .overlay {
     height: 3.4em;
   }
 }
+
+@media (min-width: 1200px) {
+  .hamburger-menu, .logo-text-menu {
+    display: none;
+  }
+
+  header {
+    height: 6.2em;
+  }
+
+  .logo-image {
+    height: auto;
+  }
+
+  .logo-image img {
+    height: 4.7em;
+    align-items: center; 
+  }
+
+  .logo-image {
+    margin-left: 10%;
+  }
+
+  .menu {
+    width: auto;
+    position: static;
+    margin-right: 10%;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: $font-weight-400;
+    font-size: 26px;
+    margin-inline: 0;
+    padding: .5em;
+    border: 0;
+  }
+}

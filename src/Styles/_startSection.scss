@@ -110,12 +110,13 @@
     flex-direction: row-reverse;
   }
   .start-section .start-section-text-container {
-    height: calc(100vh - 5.6em - 5.5em);
+    height: calc(100vh - 5.6em - 6.2em);
     width: 30vw;
+    margin-bottom: 0;
   }
 
   .start-section .start-section-wrapper {
-    height: calc(100vh - 5.6em - 5.5em);
+    height: calc(100vh - 5.6em - 6.2em);
     background-image: none;
     background-color: $dark-green;
     width: 70vw;
@@ -123,5 +124,21 @@
 
   .start-section .start-section-heading-container {
     box-shadow: $box-shadow;
+  }
+
+  .start-section
+    .start-section-text-container
+    .app-podcast-youtube-text-container {
+    width: 60%;
+  }
+
+  .start-section
+    .start-section-text-container
+    .harmoni-stillhet-frid-container {
+    width: 60%;
+  }
+
+  .start-section .start-section-text-container .quote-container {
+    width: 60%;
   }
 }

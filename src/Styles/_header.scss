@@ -246,8 +246,8 @@ body.menu-active .overlay {
   }
 
   .menu li a:hover {
-    border-bottom: 3px $dark-brown;
-    color: $dark-brown; 
+    // text-decoration: underline 2px;
+    color: $dark-brown;
   }
 
   .menu li a::after {

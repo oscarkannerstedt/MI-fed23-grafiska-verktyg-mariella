@@ -244,4 +244,13 @@ body.menu-active .overlay {
     padding: .5em;
     border: 0;
   }
+
+  .menu li a:hover {
+    border-bottom: 3px $dark-brown;
+    color: $dark-brown; 
+  }
+
+  .menu li a::after {
+    content: none;
+  }
 }

@@ -772,6 +772,7 @@ body.menu-active .overlay {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

@@ -48,10 +48,6 @@
     }
   }
 
-  .quote-container-mobile {
-    display: none;
-  }
-
   .start-section-text-container {
     display: flex;
     flex-direction: column;
@@ -84,6 +80,14 @@
       color: $light-green;
       width: 80vw;
       margin-block: 1em;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .p-decoration {
+      margin: 0.5em;
     }
 
     .quote-container {
@@ -97,8 +101,8 @@
       margin-block: 1em;
 
       .block-quote {
-        margin-left: 20px;
         line-height: 30px;
+        font-style: italic;
       }
       .quote-author {
         display: flex;
@@ -107,6 +111,10 @@
       }
     }
   }
+}
+
+.app-podcast-youtube-text-container-tablet {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -140,25 +148,47 @@
 
   .start-section .start-section-heading-container {
     box-shadow: $box-shadow;
+    width: 50vw;
   }
 
   .start-section
     .start-section-text-container
     .app-podcast-youtube-text-container {
-    width: 60%;
+    display: none;
   }
 
   .start-section
     .start-section-text-container
     .harmoni-stillhet-frid-container {
     width: 60%;
-  }
-
-  .start-section .quote-container-mobile {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
   }
 
   .start-section .start-section-text-container .quote-container {
+    width: 60%;
+    font-size: $font-size-s;
+  }
+
+  .quote-container-mobile .quote-author {
+    padding-top: 1em;
+  }
+
+  .app-podcast-youtube-text-container-tablet {
+    background-color: $light-green;
+    border-radius: $border-radius-l;
+    padding: 20px;
+    text-align: center;
+    font-family: $body-font;
+    font-size: 20px;
+    margin-block: 1em;
+    display: block;
+    width: 30vw;
+    font-size: $font-size-m;
+    line-height: 1.6;
+  }
+  .p-decoration {
     display: none;
   }
 }

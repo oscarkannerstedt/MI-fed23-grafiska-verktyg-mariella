@@ -170,6 +170,10 @@ body.menu-active .overlay {
   transform: scaleX(1);
 }
 
+/* =======================
+        Ipad design
+   ======================= */
+
 @media (min-width: 768px) {
   header {
     height: 5.6em;
@@ -190,5 +194,63 @@ body.menu-active .overlay {
 
   .logo-image img {
     height: 3.4em;
+  }
+}
+
+/* =======================
+      Desktop Design
+   ======================= */
+
+@media (min-width: 1200px) {
+  .hamburger-menu, .logo-text-menu {
+    display: none;
+  }
+
+  header {
+    height: 6.2em;
+  }
+
+  .logo-image {
+    height: auto;
+  }
+
+  .logo-image img {
+    height: 4.7em;
+    align-items: center; 
+  }
+
+  .logo-image {
+    margin-left: 10%;
+  }
+
+  .menu {
+    width: auto;
+    position: static;
+    margin-right: 10%;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: $font-weight-400;
+    font-size: 26px;
+    margin-inline: 0;
+    padding: .5em;
+    border: 0;
+  }
+
+  .menu li a:hover {
+    // text-decoration: underline 2px;
+    color: $dark-brown;
+  }
+
+  .menu li a::after {
+    content: none;
   }
 }

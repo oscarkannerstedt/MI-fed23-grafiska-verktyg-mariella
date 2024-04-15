@@ -1,4 +1,4 @@
-export function menuScrollTo() {
+export default function menuScrollTo() {
     const menuLinks = document.querySelectorAll('.menu-link');
 
     menuLinks.forEach(function (menuLink) {

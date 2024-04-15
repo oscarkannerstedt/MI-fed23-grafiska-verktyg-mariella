@@ -447,6 +447,30 @@ body.menu-active .overlay {
   margin-inline: auto;
 }
 
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.svgLogoAnimation {
+  animation: slideIn 2s forwards;
+}
+
+#leftSvgId {
+  vertical-align: top;
+  transform: translateX(100px);
+}
+
+#rightSvgId {
+  vertical-align: top;
+  margin-top: -4px;
+  transform: translateX(-100px);
+}
+
 .logo-image img {
   margin-left: 1em;
   width: 100px;

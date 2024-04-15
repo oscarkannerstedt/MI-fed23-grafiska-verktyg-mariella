@@ -3,6 +3,15 @@ export default function toggleMenu() {
     const menuToggle = document.getElementById('menuToggle');
     menuToggle.addEventListener('change', function () {
       document.body.classList.toggle('menu-active', this.checked);
+
+      const leftSvgLogo = document.getElementById('leftSvgId');
+      const rightSvgLogo = document.getElementById('rightSvgId');
+      leftSvgLogo.classList.remove('svgLogoAnimation');
+      rightSvgLogo.classList.remove('svgLogoAnimation');
+      setTimeout(() => {
+        leftSvgLogo.classList.add('svgLogoAnimation');
+        rightSvgLogo.classList.add('svgLogoAnimation');
+      }, 10);
     });
   });
 

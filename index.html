@@ -27,16 +27,16 @@
       <nav class="menu">
         <ul>
           <li>
-            <a href="#"><span>Start</span></a>
+            <a href="#top" class="menu-link" data-target="top"><span>Start</span></a>
           </li>
           <li>
-            <a href="#"><span>Om For Rest</span></a>
+            <a href="#scrollToAbout" class="menu-link" data-target="scrollToAbout"><span>Om For Rest</span></a>
           </li>
           <li>
-            <a href="#"><span>Om oss</span></a>
+            <a href="#aboutUsSection" class="menu-link" data-target="aboutUsSection"><span>Om oss</span></a>
           </li>
           <li>
-            <a href="#"><span>Kontakt</span></a>
+            <a href="#contactSection" class="menu-link" data-target="contactSection"><span>Kontakt</span></a>
           </li>
         </ul>
         <div class="logo-text-menu">
@@ -50,7 +50,7 @@
           Den här webbplatsen använder cookies. Genom att fortsätta att surfa på
           den här webbplatsen godkänner du vår användning av cookies.
         </p>
-        <a href="#" class="cookieOkBtn" onclick="hideCookieBar()">OK</a>
+        <a class="cookieOkBtn" onclick="hideCookieBar()">OK</a>
       </div>
       <section id="startSection" class="start-section">
         <section class="start-section-wrapper">
@@ -97,7 +97,7 @@
               preload="auto"
             ></audio>
           </div>
-          <div class="app-podcast-youtube-text-container-tablet">
+          <div class="app-podcast-youtube-text-container-tablet" id="scrollToAbout">
             <p>App, podcast och Youtube- kanal om skogsbad!</p>
           </div>
         </section>
@@ -128,7 +128,7 @@
         </section>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="aboutUsSection">
         <!-- This is the contact,s inforation-->
         <div class="page1">
           <h2 class="contact-titel">Kontakt</h2>
@@ -141,7 +141,7 @@
           </p>
         </div>
 
-        <section class="page2">
+        <section class="page2" id="contactSection">
           <div class="contact-details">
             <!-- This is the input -->
             <div>

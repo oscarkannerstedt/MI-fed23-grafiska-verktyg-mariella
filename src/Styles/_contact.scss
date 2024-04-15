@@ -1,315 +1,156 @@
 
-
-.page1{
-    background-image: url(/assets/skogsbad_blur.jpg);
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - 4em - 5.5em);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: -5.5em
+.page1 {
+  background-image: url(/assets/skogsbad_blur.jpg);
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 4em - 5.5em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -5.5em;
 }
 
-.contact-titel{
-   
-    background-color:#293f16;
-    border:none;
-    color:#d6e6bc;
-    border-radius: 10px;
-    font-weight: 400;
-    font-family:$header-font;
-    font-size: $font-size-xl;
-    text-align: center;    
-    justify-content: center;
-    padding-top:25px ;
-    width: 330px;
-    height: 100px;
-    margin-top: -1.5em;
-        
+.contact-titel {
+  background-color: #293f16;
+  border: none;
+  color: #d6e6bc;
+  border-radius: 10px;
+  font-weight: 400;
+  font-family: $header-font;
+  font-size: $font-size-xl;
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+  margin: 10px 20px 10px;
+  width: 80vw;
 }
 
-
-.contact-text1{
-    background-color:#293f16;
-    color: #d6e6bc;
-    font-family: $body-font;
-    font-size: $font-size-sm;
-    border: none;
-    border-radius: 10px;
-    padding-left:1em;
-    padding: 20px 15px 20px;
-    margin: 10px 20px 10px;
-    font-weight: 300; 
-    line-height: 20px;
-    margin-top: -6.5em; 
-    width: 300px;      
+.contact-text1 {
+  background-color: #293f16;
+  color: #d6e6bc;
+  font-family: $body-font;
+  font-size: $font-size-sm;
+  border: none;
+  border-radius: 10px;
+  padding-left: 1em;
+  padding: 20px;
+  margin: 10px 20px 10px;
+  width: 80vw;
+  font-weight: 300;
+  line-height: 20px;
 }
 
-.page2{
-    
-    background-image: url(/assets/skogsbad_blur.jpg);
-    background-size: cover;
-    background-position: center;
-    height: calc(120vh - 4em - 5.5em);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    
+.page2 {
+  background-image: url(/assets/skogsbad_blur.jpg);
+  background-size: cover;
+  background-position: center;
+  height: calc(120vh - 4em - 5.5em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-
-
-.contact-details{
-    background-color:#293f16;
-    color:#d6e6bc;
-    border: none;
-    border-radius: 10px;
-    padding-left: 2em;
-    font-size: 16px;
-    font-family: $body-font;
-    padding: 20px;
-    font-weight: 200; 
-    width: 300px; 
-    height: 200px;
-    margin-top: -6em;     
+.contact-details {
+  background-color: #293f16;
+  color: #d6e6bc;
+  border: none;
+  border-radius: 10px;
+  padding-left: 2em;
+  font-size: $font-size-xs;
+  font-family: $body-font;
+  padding: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  width: 80vw;
+  text-align: center;
+  margin-block: 1em;
 }
 
-.contact-label{
-    margin-right: 3em; 
-    
-               
+.contact-label {
+  padding-right: 5px;
 }
-#email{
-    margin-right: 4em; 
-          
-
+#email {
+  margin-right: 13px;
 }
 
-.input1{
-    margin-bottom: 15px;
-    background-color: #d6e6bc;
-    border: none;
-    border-radius: 10px;
-    justify-self: end;
-    width: 159px;
-    height: 29px;
-    padding-left: 1em;
-       
-}
-  
-
-.button{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    margin-left: 2em;
-    margin-top: 15px;
+.input1 {
+  margin-bottom: 5px;
+  background-color: #d6e6bc;
+  border: none;
+  border-radius: 5px;
 }
 
-.button-send{
-    background-color: #daa520;
-    font-family: $body-font;
-    font-size: 16px;
-    border-radius: 10px;
-    margin-left: -2em;
-    border: 1px solid #d6e6bc;
-    height: 36px;
-    width: 100px; 
-    font-weight: 400;
-    line-height: 16px; 
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    
+.button {
+  text-align: center;
+  margin-top: 10px;
 }
 
-.button-cancel{
-    background-color: #daa520;
-    font-family: $body-font;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 18px 10px ;
-    margin-left: 5.5em;
-    border: 1px solid #d6e6bc; 
-    height: 36px;
-    width: 100px; 
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-     
-} 
-
-.label-box1{
-    margin-top: 20px;
-    line-height: 2;
-    
+.button-send {
+  background-color: #daa520;
+  font-family: $body-font;
+  border: none;
+  border-radius: 10px;
+  margin-right: 15px;
+  padding: 10px 18px 10px;
 }
 
-.label-box{
-    line-height: 1; 
-}
-.checkbox{
-    margin-top: 15px;
-     
-}
-
-.check-box{
-    padding-right:10px;
-    top: 0;
-    left: 0;
-    height: 9px;
-    width: 8px; 
-    background-color: #d6e6bc;       
+.button-cancel {
+  background-color: #daa520;
+  font-family: $body-font;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px 10px;
+  margin-left: 15px;
 }
 
-.info-title{
-    padding-left: 5em;
-    font-size: 16px;
-        
+.label-box1 {
+  margin-left: 38px;
+  margin-top: 20px;
+  line-height: 3;
 }
 
-.contact-info{
-    background-color:#293f16;
-    font-family: $body-font;
-    color: #d6e6bc;
-    font-size:14px; 
-    border: none;
-    border-radius: 10px;
-    padding-left:  10px; 
-    padding: 20px 10px 0;
-    font-weight: 400;
-    line-height: 1.5em; 
-    text-align: left;
-    width: 320px; 
-    height: 110px;
-    margin-block: 1em; 
-    margin-top: -7em;         
+.label-box {
+  line-height: 2;
+}
+.checkbox {
+  margin-top: 15px;
 }
 
-.list-info{
-    list-style-type: none;
-    padding-left: 5.5em;
-    
+.check-box {
+  padding-right: 10px;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 10px;
 }
 
-/* =======================
-        Ipad design
-   ======================= */
+.info-title {
+  padding-left: 10px;
+}
 
-@media screen and (min-width: 768px){
+.contact-info {
+  background-color: #293f16;
+  font-family: $body-font;
+  color: #d6e6bc;
+  font-size: $font-size-s;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  width: 80vw;
+  margin-block: 1em;
+  margin-top: -6em;
+}
 
-    
-    .page1{
-        
-        background-image: none;
-        background-color: #293f16;
-    }
+.list-info {
+  list-style-type: none;
+  padding-left: 10px;
+}
 
-    .page2{
-        background-image: none;
-        background-color: #293f16;
-        
-    }
-   
-    
-    .contact-titel{
-        box-shadow: 0 4px 8px rgb(23, 12, 0) ;
-        height: 112px;
-        width: 560px;
-        margin-top: -2em;
-        padding: 20px 10px 20px;
-    }
-
-    .contact-text1{
-        font-size:$font-size-l ;
-        line-height: 40px;
-        font-weight: 200;
-        height: 194px;
-        width: 550px;
-        margin-top: -7em;
-
-    }
-
-    .contact-details{
-        box-shadow: 0 4px 8px rgb(23, 12, 0);
-        width: 560px;
-        height: 270px;
-        font-size: 24px;
-        margin-top: -12em;
-        padding: 20px 20px 40px;    
-   
-    }
-
-    .input1{
-        height: 40px;
-        width: 232px;
-
-    .button{
-        margin-left: 1.2em;
-        margin-top: 30px;
-    }    
-        
-    }
-    .button-send{
-        width: 150px;
-        height: 60px;
-        margin-left: -1.8em;
-        font-size: 24px;
-        margin-left: 20px;   
-            
-    }
-
-    .button-cancel{
-        width: 150px;
-        height: 60px;
-        font-size: 24px;
-    }
-
-    .contact-info{
-        height: 112px;
-        width: 700px;
-        margin-top: -10em;
-          
-
-    }
-    .list-info{
-        margin-top: 10px;
-        padding-left: 3em;
-        font-size: 24px; 
-    }
-
-
-    .info-title{
-        font-size: 32px;
-        margin-left: 2em;
-        padding: 0;
-
-    }
-
-    #email{
-        margin-right: 7em;      
-    }
-
-    .contact-label{
-        margin-right: 6em; 
-    }
-
-
-    .check-box{
-        width: 12px;
-        height: 11px;
-    }
-
-   
-
-   
-    
-
-
-
-    
-
+@media (min-width: 768px) {
 }

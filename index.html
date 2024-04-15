@@ -50,7 +50,7 @@
         Den här webbplatsen använder cookies. Genom att fortsätta att surfa på den här webbplatsen godkänner du vår
         användning av cookies.
       </p>
-      <a href="#" class="cookieOkBtn" onclick="hideCookieBar()">OK</a>
+      <a href="#" class="cookieOkBtn">OK</a>
 
     </div>
 
@@ -63,9 +63,16 @@
 
         <!-- Add alt text to images -->
         <div id="mobileImagesContainer" class="mobile-images-container">
-          <img src="/assets/spotify-mock-portrait_h300.png" alt="" width="98" height="197" />
-          <img src="/assets/forrest-portrait_h300.png" alt="" width="98" height="197" />
-          <img src="/assets/youtube_mock-portrait_h300.png" alt="" width="98" height="197" />
+          <a href="https://open.spotify.com/artist/4NqS7DbPFYwZmniGHCPMpm" target="_blank">
+            <img src="/assets/spotify-mock-portrait_h300.png" alt="" width="98" height="197" />
+          </a>
+          <img id='playImageBtn' src="/assets/forrest-portrait_h300.png" alt="" width="98" height="197"
+            style="cursor: pointer;" />
+          <a href="https://www.youtube.com/watch?v=5lCRsLjMeso&list=PLAXKIS0jXy64fre2EuL12XU7rBHJH16oN&index=1&ab_channel=TopRelaxMusic"
+            target="_blank">
+            <img src="/assets/youtube_mock-portrait_h300.png" alt="" width="98" height="197" />
+          </a>
+          <audio id="audioClip" src="./assets/mountain-nature-birds.mp3" preload="auto"></audio>
         </div>
       </section>
       <section class="start-section-text-wrapper">

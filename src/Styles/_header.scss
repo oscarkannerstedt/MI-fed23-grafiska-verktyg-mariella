@@ -206,7 +206,8 @@ body.menu-active .overlay {
    ======================= */
 
 @media (min-width: 1200px) {
-  .hamburger-menu, .logo-text-menu {
+  .hamburger-menu,
+  .logo-text-menu {
     display: none;
   }
 
@@ -220,7 +221,7 @@ body.menu-active .overlay {
 
   .logo-image img {
     height: 4.7em;
-    align-items: center; 
+    align-items: center;
   }
 
   .logo-image {
@@ -245,7 +246,7 @@ body.menu-active .overlay {
     font-weight: $font-weight-400;
     font-size: 26px;
     margin-inline: 0;
-    padding: .5em;
+    padding: 0.5em;
     border: 0;
   }
 

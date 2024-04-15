@@ -1,4 +1,8 @@
-function hideCookieBar() {
+export default function hideCookieBar() {
   let bar = document.querySelector('.cookieBar');
-  bar.style.display = 'none';
+  let okButton = document.querySelector('.cookieOkBtn');
+
+  okButton.addEventListener('click', function() {
+    bar.style.display = 'none';
+  });
 }

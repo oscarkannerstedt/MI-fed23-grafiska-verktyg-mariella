@@ -125,7 +125,7 @@ header {
   top: 4em;
   left: 0;
   right: 0;
-  bottom: 6.14em;
+  bottom: 6em;
   background-color: rgba($dark-green, 0.9);
   backdrop-filter: blur(1px);
   z-index: 999;
@@ -140,9 +140,12 @@ body.menu-active .overlay {
   display: flex;
   justify-content: center;
   margin-bottom: 2em;
+  width: 100px;
+  height: 50px;
+  margin-inline: auto;
 }
 
-.logo-image {
+.logo-image img {
   margin-left: 1em;
   width: 100px;
   height: 50px;
@@ -194,6 +197,7 @@ body.menu-active .overlay {
 
   .logo-image img {
     height: 3.4em;
+    width: 100%;
   }
 }
 
@@ -202,7 +206,8 @@ body.menu-active .overlay {
    ======================= */
 
 @media (min-width: 1200px) {
-  .hamburger-menu, .logo-text-menu {
+  .hamburger-menu,
+  .logo-text-menu {
     display: none;
   }
 
@@ -216,7 +221,7 @@ body.menu-active .overlay {
 
   .logo-image img {
     height: 4.7em;
-    align-items: center; 
+    align-items: center;
   }
 
   .logo-image {
@@ -241,7 +246,7 @@ body.menu-active .overlay {
     font-weight: $font-weight-400;
     font-size: 26px;
     margin-inline: 0;
-    padding: .5em;
+    padding: 0.5em;
     border: 0;
   }
 

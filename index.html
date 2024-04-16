@@ -28,7 +28,7 @@
 <body id="top">
   <header>
     <div class="logo-image">
-      <img src="/assets/logotype.svg" alt="Logo" />
+      <img src="/assets/logotype.svg" alt="Logo" width="100" height="50" loading="lazy" />
     </div>
     <input type="checkbox" id="menuToggle" class="menu-toggle" />
     <label for="menuToggle" class="hamburger-menu">
@@ -39,17 +39,17 @@
     <nav class="menu">
       <ul>
         <li>
-          <a href="#"><span>Start</span></a>
+          <a href="#top" class="menu-link" data-target="top"><span>Start</span></a>
         </li>
         <li>
-          <a href="#"><span>Om For Rest</span></a>
+          <a href="#scrollToAbout" class="menu-link" data-target="scrollToAbout"><span>Om For Rest</span></a>
         </li>
-        <li>
-          <a href="#"><span>Om oss</span></a>
-        </li>
-        <li>
-          <a href="#"><span>Kontakt</span></a>
-        </li>
+        li>
+            <a href="#aboutUsSection" class="menu-link" data-target="aboutUsSection"><span>Om oss</span></a>
+          </li>
+          <li>
+            <a href="#contactSection" class="menu-link" data-target="contactSection"><span>Kontakt</span></a>
+          </li>
       </ul>
       <div class="logo-text-menu">
         <img src="/assets/logo-left.svg" class="svgLogoAnimation" id="rightSvgId" alt="Logo" width="100" height="50"
@@ -77,13 +77,13 @@
         <!-- Add alt text to images -->
         <div id="mobileImagesContainer" class="mobile-images-container">
           <a href="https://open.spotify.com/artist/4NqS7DbPFYwZmniGHCPMpm" target="_blank">
-            <img src="/assets/spotify-mock-portrait_h300.png" alt="" width="98" height="197" />
+            <img src="/assets/spotify-mock-portrait_h300.png" alt="" width="98" height="197" loading="lazy"/>
           </a>
           <img id="playImageBtn" src="/assets/forrest-portrait_h300.png" alt="" width="98" height="197"
-            style="cursor: pointer" />
+            style="cursor: pointer" loading="lazy"/>
           <a href="https://www.youtube.com/watch?v=5lCRsLjMeso&list=PLAXKIS0jXy64fre2EuL12XU7rBHJH16oN&index=1&ab_channel=TopRelaxMusic"
             target="_blank">
-            <img src="/assets/youtube_mock-portrait_h300.png" alt="" width="98" height="197" />
+            <img src="/assets/youtube_mock-portrait_h300.png" alt="" width="98" height="197" loading="lazy"/>
           </a>
           <audio id="audioClip" src="./assets/mountain-nature-birds.mp3" preload="auto"></audio>
         </div>
@@ -118,7 +118,7 @@
       </section>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="aboutUsSection">
       <!-- This is the contact,s inforation-->
       <div class="page1">
         <h2 class="contact-titel">Kontakt</h2>
@@ -131,7 +131,7 @@
         </p>
       </div>
 
-      <section class="page2">
+      <section class="page2" id="contactSection">
         <div class="contact-details">
           <!-- This is the input -->
           <div>
@@ -178,11 +178,11 @@
     <div class="button-container">
       <button class="app-store-badge-button">
         <img class="app-store-badge" src="/assets/Download_on_the_App_Store_Badge_SE_RGB_blk_100317.svg"
-          alt="for download For Rest app in App store" />
+          alt="for download For Rest app in App store" width="120" height="40" loading="lazy"/>
       </button>
       <button class="google-play-badge-button">
         <img class="google-play-badge" src="/assets/google-play-badge.png"
-          alt="for download For Rest app in Google play" />
+          alt="for download For Rest app in Google play" width="137" height="50" loading="lazy" />
       </button>
     </div>
 
@@ -190,7 +190,7 @@
       &copy; All right reserved | For Rest Ab | 2024
     </span>
     <a href="#top" class="desktop-leaf-button">
-      <img src="/assets/leaf_arrow.svg" alt="Leaf icon" class="desktop-leaf-image" width="38" height="77" />
+      <img src="/assets/leaf_arrow.svg" alt="Leaf icon" class="desktop-leaf-image" width="38" height="77" loading="lazy" />
     </a>
   </footer>
   <div class="overlay"></div>

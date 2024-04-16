@@ -39,16 +39,16 @@
     <nav class="menu">
       <ul>
         <li>
-          <a href="#top" class="menu-link" data-target="top"><span>Start</span></a>
+          <a href="#top" class="menu-link" data-target="top" aria-label="Go to the top of the page"><span>Start</span></a>
         </li>
         <li>
-          <a href="#scrollToAbout" class="menu-link" data-target="scrollToAbout"><span>Om For Rest</span></a>
+          <a href="#scrollToAbout" class="menu-link" data-target="scrollToAbout" aria-label="Go to the section about"><span>Om For Rest</span></a>
         </li>
         <li>
-            <a href="#aboutUsSection" class="menu-link" data-target="aboutUsSection"><span>Om oss</span></a>
+            <a href="#aboutUsSection" class="menu-link" data-target="aboutUsSection" aria-label="Go to the section about us"><span>Om oss</span></a>
           </li>
           <li>
-            <a href="#contactSection" class="menu-link" data-target="contactSection"><span>Kontakt</span></a>
+            <a href="#contactSection" class="menu-link" data-target="contactSection" aria-label="Go to the contact section"><span>Kontakt</span></a>
           </li>
       </ul>
       <div class="logo-text-menu">
@@ -65,7 +65,7 @@
         Den här webbplatsen använder cookies. Genom att fortsätta att surfa på
         den här webbplatsen godkänner du vår användning av cookies.
       </p>
-      <button class="cookieOkBtn">OK</button>
+      <button class="cookieOkBtn" aria-label="Accept cookies and close messages">OK</button>
     </div>
     <section id="startSection" class="start-section">
       <section class="start-section-wrapper">
@@ -76,13 +76,13 @@
 
         <!-- Add alt text to images -->
         <div id="mobileImagesContainer" class="mobile-images-container">
-          <a href="https://open.spotify.com/artist/4NqS7DbPFYwZmniGHCPMpm" target="_blank">
+          <a href="https://open.spotify.com/artist/4NqS7DbPFYwZmniGHCPMpm" target="_blank" aria-label="Visit us on spotify">
             <img src="/assets/spotify-mock-portrait_h300.png" alt="" width="98" height="197" loading="lazy"/>
           </a>
           <img id="playImageBtn" src="/assets/forrest-portrait_h300.png" alt="" width="98" height="197"
-            style="cursor: pointer" loading="lazy"/>
+            style="cursor: pointer" loading="lazy" aria-label="Click to play the song"/>
           <a href="https://www.youtube.com/watch?v=5lCRsLjMeso&list=PLAXKIS0jXy64fre2EuL12XU7rBHJH16oN&index=1&ab_channel=TopRelaxMusic"
-            target="_blank">
+            target="_blank" aria-label="Visit the youtube chanel for music">
             <img src="/assets/youtube_mock-portrait_h300.png" alt="" width="98" height="197" loading="lazy"/>
           </a>
           <audio id="audioClip" src="./assets/mountain-nature-birds.mp3" preload="auto"></audio>
@@ -176,11 +176,11 @@
 
   <footer class="footer">
     <div class="button-container">
-      <button class="app-store-badge-button">
+      <button class="app-store-badge-button" aria-label="Download For Rest app from App Store">
         <img class="app-store-badge" src="/assets/Download_on_the_App_Store_Badge_SE_RGB_blk_100317.svg"
           alt="for download For Rest app in App store" width="120" height="40" loading="lazy"/>
       </button>
-      <button class="google-play-badge-button">
+      <button class="google-play-badge-button" aria-label="Download For Rest app from Google play">
         <img class="google-play-badge" src="/assets/google-play-badge.png"
           alt="for download For Rest app in Google play" width="137" height="50" loading="lazy" />
       </button>
@@ -189,7 +189,7 @@
     <span class="copyright-text">
       &copy; All right reserved | For Rest Ab | 2024
     </span>
-    <a href="#top" class="desktop-leaf-button">
+    <a href="#top" class="desktop-leaf-button" aria-label="Go to the top of the page">
       <img src="/assets/leaf_arrow.svg" alt="Leaf icon" class="desktop-leaf-image" width="38" height="77" loading="lazy" />
     </a>
   </footer>

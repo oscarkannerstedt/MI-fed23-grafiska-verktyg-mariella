@@ -135,14 +135,14 @@
         <div class="contact-details">
           <!-- This is the input -->
           <div>
-            <form>
+            <form id="contactForm">
               <label class="contact-label" for="firstname">Förnamn</label>
-              <input class="input1" type="text" name="email" placeholder="Förnamn" /><br />
+              <input class="input1" id="firstnameInput" type="text" name="email" placeholder="Förnamn" /><br />
 
               <label class="contact-label" id="email" for="email">E-mail</label>
-              <input class="input1" type="text" name="email" placeholder="E-mail" /><br />
+              <input class="input1" id="emailInput" type="text" name="email" placeholder="E-mail" /><br />
 
-              <label class="label-box1">
+              <label class="label-box1" id="checkBox1">
                 <input class="check-box" type="checkbox" name="box" /> Jag
                 vill ha mer info om era produkter </label><br />
 
@@ -154,7 +154,7 @@
               <section>
                 <!-- This is the input -->
                 <div class="button">
-                  <button class="button-send" type="button">Skicka</button>
+                  <button class="button-send" type="button" id="submitButton">Skicka</button>
                   <button class="button-cancel" type="button">Avbryt</button>
                 </div>
               </section>

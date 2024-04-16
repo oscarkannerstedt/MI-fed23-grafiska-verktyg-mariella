@@ -2,6 +2,18 @@ export default function disableButton() {
     const form = document.getElementById('contactForm');
     const firstnameInput = document.getElementById('firstnameInput');
     const emailInput = document.getElementById('emailInput');
-    const checkBox1 = document.getElementById('checkBox1');
+    const checkBox1 = document.querySelector('.label-box1 input[type="checkbox"]');
     const submitButton = document.getElementById('submitButton');
+
+    form.addEventListener('input', function() {
+        const firstNameFilled = firstnameInput.value.trim() != '';
+        const emailFilled = emailInput.value.trim() !== '';
+        const checkBoxChecked = checkBox1.checked;
+
+        if (firstNameFilled && emailFilled && checkBoxChecked) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    })
 }

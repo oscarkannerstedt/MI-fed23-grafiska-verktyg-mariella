@@ -2,7 +2,7 @@ export default function disableButton() {
     const form = document.getElementById('contactForm');
     const firstnameInput = document.getElementById('firstnameInput');
     const emailInput = document.getElementById('emailInput');
-    const checkBox1 = document.querySelector('.label-box1 input[type="checkbox"]');
+    const checkBox1 = document.querySelector('.label-box1 input');
     const submitButton = document.getElementById('submitButton');
 
     form.addEventListener('input', function() {

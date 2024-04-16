@@ -9,4 +9,3 @@ toggleMenu();
 menuScrollTo();
 soundPlayer();
 disableButton();
-

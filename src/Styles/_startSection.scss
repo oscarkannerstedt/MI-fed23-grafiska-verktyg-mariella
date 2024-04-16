@@ -117,6 +117,13 @@
   display: none;
 }
 
+.app-store-badge-button-desktop,
+.google-play-badge-button-desktop {
+  display: none;
+}
+
+// IPAD
+
 @media (min-width: 768px) {
   .start-section {
     flex-direction: row-reverse;
@@ -125,6 +132,8 @@
     height: calc(100vh - 5.6em - 6em);
     width: 30vw;
     margin-bottom: 0;
+    position: fixed;
+    left: 0;
   }
 
   .start-section .quote-container-mobile {
@@ -190,5 +199,73 @@
   }
   .p-decoration {
     display: none;
+  }
+  .app-store-badge-button-desktop,
+  .google-play-badge-button-desktop {
+    display: none;
+  }
+}
+
+//  DESKTOP
+
+@media (min-width: 1200px) {
+  .start-section .start-section-text-container {
+    height: calc(100vh - 4em - 7em);
+  }
+
+  .start-section .start-section-wrapper {
+    height: calc(100vh - 4em - 7em);
+  }
+
+  .content-wrapper {
+    height: calc(100vh - 5.6em - 6em);
+    position: relative;
+    flex: 1;
+    top: 6.2em;
+  }
+
+  .start-section {
+    margin-inline: 9em;
+
+    .mobile-images-container {
+      img {
+        margin: 0 10px;
+        height: 150px;
+        width: 80px;
+      }
+    }
+  }
+
+  .start-section .start-section-text-container {
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .app-store-badge-button-desktop,
+  .google-play-badge-button-desktop {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-inline: 1em;
+  }
+
+  .button-containter-desktop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .app-podcast-youtube-text-container-tablet {
+    margin: 0;
+  }
+
+  .start-section .start-section-heading-container {
+    width: auto;
+    padding: 3.5em;
+  }
+
+  .harmoni-stillhet-frid-container {
+    font-size: 48px;
   }
 }

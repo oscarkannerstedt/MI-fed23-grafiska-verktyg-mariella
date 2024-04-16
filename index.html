@@ -1,19 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Skogsbadet som alltid är nära"
-    />
+    <meta name="description" content="Skogsbadet som alltid är nära" />
     <meta property="og:title" content="For Rest" />
     <meta property="og:type" content="Website" />
     <meta property="og:url" content="https://ForRest.se" />
-    <meta
-      property="og:image"
-      content="https://ForRest.se/ForRest.jpg"
-    />
+    <meta property="og:image" content="https://ForRest.se/ForRest.jpg" />
     <meta name="theme-color" content="#573e28" />
     <link rel="stylesheet" href="/src/Styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,176 +19,328 @@
     <title>For Rest</title>
   </head>
 
-<body id="top">
-  <header>
-    <div class="logo-image">
-      <img src="/assets/logotype.svg" alt="Logo" width="100" height="50" loading="lazy" />
-    </div>
-    <input type="checkbox" id="menuToggle" class="menu-toggle" />
-    <label for="menuToggle" class="hamburger-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <nav class="menu">
-      <ul>
-        <li>
-          <a href="#top" class="menu-link" data-target="top" aria-label="Go to the top of the page"><span>Start</span></a>
-        </li>
-        <li>
-          <a href="#scrollToAbout" class="menu-link" data-target="scrollToAbout" aria-label="Go to the section about"><span>Om For Rest</span></a>
-        </li>
-        <li>
-            <a href="#aboutUsSection" class="menu-link" data-target="aboutUsSection" aria-label="Go to the section about us"><span>Om oss</span></a>
+  <body id="top">
+    <header>
+      <div class="logo-image">
+        <img
+          src="/assets/logotype.svg"
+          alt="Logo"
+          width="100"
+          height="50"
+          loading="lazy"
+        />
+      </div>
+      <input type="checkbox" id="menuToggle" class="menu-toggle" />
+      <label for="menuToggle" class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a
+              href="#top"
+              class="menu-link"
+              data-target="top"
+              aria-label="Go to the top of the page"
+              ><span>Start</span></a
+            >
           </li>
           <li>
-            <a href="#contactSection" class="menu-link" data-target="contactSection" aria-label="Go to the contact section"><span>Kontakt</span></a>
+            <a
+              href="#scrollToAbout"
+              class="menu-link"
+              data-target="scrollToAbout"
+              aria-label="Go to the section about"
+              ><span>Om For Rest</span></a
+            >
           </li>
-      </ul>
-      <div class="logo-text-menu">
-        <img src="/assets/logo-left.svg" class="svgLogoAnimation" id="rightSvgId" alt="Logo" width="100" height="50"
-          loading="lazy" />
-        <img src="/assets/logo-right.svg" class="svgLogoAnimation" id="leftSvgId" alt="Logo" width="100" height="50"
-          loading="lazy" />
-      </div>
-    </nav>
-  </header>
-  <div class="content-wrapper">
-    <div class="cookieBar">
-      <p class="cookieText">
-        Den här webbplatsen använder cookies. Genom att fortsätta att surfa på
-        den här webbplatsen godkänner du vår användning av cookies.
-      </p>
-      <button class="cookieOkBtn" aria-label="Accept cookies and close messages">OK</button>
-    </div>
-    <section id="startSection" class="start-section">
-      <section class="start-section-wrapper">
-        <div id="startSectionHeading" class="start-section-heading-container">
-          <h1>For Rest</h1>
-          <p>Skogsbadet som alltid är nära</p>
+          <li>
+            <a
+              href="#aboutUsSection"
+              class="menu-link"
+              data-target="aboutUsSection"
+              aria-label="Go to the section about us"
+              ><span>Om oss</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="#contactSection"
+              class="menu-link"
+              data-target="contactSection"
+              aria-label="Go to the contact section"
+              ><span>Kontakt</span></a
+            >
+          </li>
+        </ul>
+        <div class="logo-text-menu">
+          <img
+            src="/assets/logo-left.svg"
+            class="svgLogoAnimation"
+            id="rightSvgId"
+            alt="Logo"
+            width="100"
+            height="50"
+            loading="lazy"
+          />
+          <img
+            src="/assets/logo-right.svg"
+            class="svgLogoAnimation"
+            id="leftSvgId"
+            alt="Logo"
+            width="100"
+            height="50"
+            loading="lazy"
+          />
         </div>
-
-        <!-- Add alt text to images -->
-        <div id="mobileImagesContainer" class="mobile-images-container">
-          <a href="https://open.spotify.com/artist/4NqS7DbPFYwZmniGHCPMpm" target="_blank" aria-label="Visit us on spotify">
-            <img src="/assets/spotify-mock-portrait_h300.png" alt="" width="98" height="197" loading="lazy"/>
-          </a>
-          <img id="playImageBtn" src="/assets/forrest-portrait_h300.png" alt="" width="98" height="197"
-            style="cursor: pointer" loading="lazy" aria-label="Click to play the song"/>
-          <a href="https://www.youtube.com/watch?v=5lCRsLjMeso&list=PLAXKIS0jXy64fre2EuL12XU7rBHJH16oN&index=1&ab_channel=TopRelaxMusic"
-            target="_blank" aria-label="Visit the youtube chanel for music">
-            <img src="/assets/youtube_mock-portrait_h300.png" alt="" width="98" height="197" loading="lazy"/>
-          </a>
-          <audio id="audioClip" src="./assets/mountain-nature-birds.mp3" preload="auto"></audio>
-        </div>
-        <div class="app-podcast-youtube-text-container-tablet" id="scrollToAbout">
-          <p>App, podcast och Youtube- kanal om skogsbad!</p>
-        </div>
-      </section>
-      <section class="start-section-text-wrapper">
-        <div class="start-section-text-container">
-          <div class="app-podcast-youtube-text-container">
-            <p>
-              App, podcast och Youtube-<br />
-              kanal om skogsbad!
-            </p>
-          </div>
-
-          <div class="harmoni-stillhet-frid-container">
-            <p>Harmoni</p>
-            <p class="p-decoration">|</p>
-            <p>Stillhet</p>
-            <p class="p-decoration">|</p>
-            <p>Frid</p>
-          </div>
-
-          <div class="quote-container">
-            <blockquote class="block-quote">
-              <p>"Appen For Rest förändrade mitt trädlösa liv!"</p>
-            </blockquote>
-            <p class="quote-author">- Nisse Gandhi</p>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <section class="contact" id="aboutUsSection">
-      <!-- This is the contact,s inforation-->
-      <div class="page1">
-        <h2 class="contact-titel">Kontakt</h2>
-        <p class="contact-text1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna
-          augue, finibus a tristique sit amet, dapibus at dui. Quisque neque
-          metus, tempus vitae rhoncus eget, aliquet in massa. Aliquam gravida
-          sodales suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit.
+      </nav>
+    </header>
+    <div class="content-wrapper">
+      <div class="cookieBar">
+        <p class="cookieText">
+          Den här webbplatsen använder cookies. Genom att fortsätta att surfa på
+          den här webbplatsen godkänner du vår användning av cookies.
         </p>
+        <button
+          class="cookieOkBtn"
+          aria-label="Accept cookies and close messages"
+        >
+          OK
+        </button>
       </div>
-
-      <section class="page2" id="contactSection">
-        <div class="contact-details">
-          <!-- This is the input -->
-          <div>
-            <form id="contactForm">
-              <label class="contact-label" for="firstname">Förnamn</label>
-              <input class="input1" id="firstnameInput" type="text" name="email" placeholder="Förnamn" /><br />
-
-              <label class="contact-label" id="email" for="email">E-mail</label>
-              <input class="input1" id="emailInput" type="text" name="email" placeholder="E-mail" /><br />
-
-              <label class="label-box1" >
-                <input class="check-box" id="checkBox1" type="checkbox" name="box" /> Jag
-                vill ha mer info om era produkter </label><br />
-
-              <label class="label-box">
-                <input class="check-box" type="checkbox" name="box" /> Jag
-                vill ta emot ert nyhetsbrev
-              </label>
-
-              <section>
-                <!-- This is the input -->
-                <div class="button">
-                  <button class="button-send" type="button" id="submitButton">Skicka</button>
-                  <button class="button-cancel" type="button">Avbryt</button>
-                </div>
-              </section>
-            </form>
+      <section id="startSection" class="start-section">
+        <section class="start-section-wrapper">
+          <div id="startSectionHeading" class="start-section-heading-container">
+            <h1>For Rest</h1>
+            <p>Skogsbadet som alltid är nära</p>
           </div>
-        </div>
 
-        <div class="contact-info">
-          <h4 class="info-title">For Rest</h4>
-          <ul class="list-info">
-            <li>P.O. Box 123 45 Malta</li>
-            <li>+356 12 345 678 90</li>
-            <li>hello@forrest.com</li>
-          </ul>
-        </div>
+          <!-- Add alt text to images -->
+          <div id="mobileImagesContainer" class="mobile-images-container">
+            <a
+              href="https://open.spotify.com/artist/4NqS7DbPFYwZmniGHCPMpm"
+              target="_blank"
+              aria-label="Visit us on spotify"
+            >
+              <img
+                src="/assets/spotify-mock-portrait_h300.png"
+                alt=""
+                width="98"
+                height="197"
+                loading="lazy"
+              />
+            </a>
+            <img
+              id="playImageBtn"
+              src="/assets/forrest-portrait_h300.png"
+              alt=""
+              width="98"
+              height="197"
+              style="cursor: pointer"
+              loading="lazy"
+              aria-label="Click to play the song"
+            />
+            <a
+              href="https://www.youtube.com/watch?v=5lCRsLjMeso&list=PLAXKIS0jXy64fre2EuL12XU7rBHJH16oN&index=1&ab_channel=TopRelaxMusic"
+              target="_blank"
+              aria-label="Visit the youtube chanel for music"
+            >
+              <img
+                src="/assets/youtube_mock-portrait_h300.png"
+                alt=""
+                width="98"
+                height="197"
+                loading="lazy"
+              />
+            </a>
+            <audio
+              id="audioClip"
+              src="./assets/mountain-nature-birds.mp3"
+              preload="auto"
+            ></audio>
+          </div>
+          <div
+            class="app-podcast-youtube-text-container-tablet"
+            id="scrollToAbout"
+          >
+            <p>App, podcast och Youtube- kanal om skogsbad!</p>
+          </div>
+          <div class="button-containter-desktop">
+            <button
+              class="app-store-badge-button-desktop"
+              aria-label="Download For Rest app from App Store"
+            >
+              <img
+                class="app-store-badge"
+                src="/assets/Download_on_the_App_Store_Badge_SE_RGB_blk_100317.svg"
+                alt="for download For Rest app in App store"
+                width="120"
+                height="40"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="google-play-badge-button-desktop"
+              aria-label="Download For Rest app from Google play"
+            >
+              <img
+                class="google-play-badge"
+                src="/assets/google-play-badge.png"
+                alt="for download For Rest app in Google play"
+                width="137"
+                height="50"
+                loading="lazy"
+              />
+            </button>
+          </div>
+        </section>
+        <section class="start-section-text-wrapper">
+          <div class="start-section-text-container">
+            <div class="app-podcast-youtube-text-container">
+              <p>
+                App, podcast och Youtube-<br />
+                kanal om skogsbad!
+              </p>
+            </div>
+
+            <div class="harmoni-stillhet-frid-container">
+              <p>Harmoni</p>
+              <p class="p-decoration">|</p>
+              <p>Stillhet</p>
+              <p class="p-decoration">|</p>
+              <p>Frid</p>
+            </div>
+
+            <div class="quote-container">
+              <blockquote class="block-quote">
+                <p>"Appen For Rest förändrade mitt trädlösa liv!"</p>
+              </blockquote>
+              <p class="quote-author">- Nisse Gandhi</p>
+            </div>
+          </div>
+        </section>
       </section>
-    </section>
-  </div>
 
-  <footer class="footer">
-    <div class="button-container">
-      <button class="app-store-badge-button" aria-label="Download For Rest app from App Store">
-        <img class="app-store-badge" src="/assets/Download_on_the_App_Store_Badge_SE_RGB_blk_100317.svg"
-          alt="for download For Rest app in App store" width="120" height="40" loading="lazy"/>
-      </button>
-      <button class="google-play-badge-button" aria-label="Download For Rest app from Google play">
-        <img class="google-play-badge" src="/assets/google-play-badge.png"
-          alt="for download For Rest app in Google play" width="137" height="50" loading="lazy" />
-      </button>
+      <section class="contact" id="aboutUsSection">
+        <!-- This is the contact,s inforation-->
+        <div class="page1">
+          <h2 class="contact-titel">Kontakt</h2>
+          <p class="contact-text1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna
+            augue, finibus a tristique sit amet, dapibus at dui. Quisque neque
+            metus, tempus vitae rhoncus eget, aliquet in massa. Aliquam gravida
+            sodales suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
+          </p>
+        </div>
+
+        <section class="page2" id="contactSection">
+          <div class="contact-details">
+            <!-- This is the input -->
+            <div>
+              <form id="contactForm">
+                <label class="contact-label" for="firstname">Förnamn</label>
+                <input
+                  class="input1"
+                  id="firstnameInput" type="text"
+                  name="email"
+                  placeholder="Förnamn"
+                /><br />
+
+                <label class="contact-label" id="email" for="email"
+                  >E-mail</label
+                >
+                <input
+                  class="input1" id="emailInput"
+                  type="text"
+                  name="email"
+                  placeholder="E-mail"
+                /><br />
+
+                <label class="label-box1" >
+                  <input class="check-box" id="checkBox1" type="checkbox" name="box" /> Jag
+                  vill ha mer info om era produkter </label
+                ><br />
+
+                <label class="label-box">
+                  <input class="check-box" type="checkbox" name="box" /> Jag
+                  vill ta emot ert nyhetsbrev
+                </label>
+
+                <section>
+                  <!-- This is the input -->
+                  <div class="button">
+                    <button class="button-send" type="button" id="submitButton">Skicka</button>
+                    <button class="button-cancel" type="button">Avbryt</button>
+                  </div>
+                </section>
+              </form>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <h4 class="info-title">For Rest</h4>
+            <ul class="list-info">
+              <li>P.O. Box 123 45 Malta</li>
+              <li>+356 12 345 678 90</li>
+              <li>hello@forrest.com</li>
+            </ul>
+          </div>
+        </section>
+      </section>
     </div>
 
-    <span class="copyright-text">
-      &copy; All right reserved | For Rest Ab | 2024
-    </span>
-    <a href="#top" class="desktop-leaf-button" aria-label="Go to the top of the page">
-      <img src="/assets/leaf_arrow.svg" alt="Leaf icon" class="desktop-leaf-image" width="38" height="77" loading="lazy" />
-    </a>
-  </footer>
-  <div class="overlay"></div>
-  <script type="module" src="/src/js/main.js"></script>
-</body>
+    <footer class="footer">
+      <div class="button-container">
+        <button
+          class="app-store-badge-button"
+          aria-label="Download For Rest app from App Store"
+        >
+          <img
+            class="app-store-badge"
+            src="/assets/Download_on_the_App_Store_Badge_SE_RGB_blk_100317.svg"
+            alt="for download For Rest app in App store"
+            width="120"
+            height="40"
+            loading="lazy"
+          />
+        </button>
+        <button
+          class="google-play-badge-button"
+          aria-label="Download For Rest app from Google play"
+        >
+          <img
+            class="google-play-badge"
+            src="/assets/google-play-badge.png"
+            alt="for download For Rest app in Google play"
+            width="137"
+            height="50"
+            loading="lazy"
+          />
+        </button>
+      </div>
 
+      <span class="copyright-text">
+        &copy; All right reserved | For Rest Ab | 2024
+      </span>
+      <a
+        href="#top"
+        class="desktop-leaf-button"
+        aria-label="Go to the top of the page"
+      >
+        <img
+          src="/assets/leaf_arrow.svg"
+          alt="Leaf icon"
+          class="desktop-leaf-image"
+          width="38"
+          height="77"
+          loading="lazy"
+        />
+      </a>
+    </footer>
+    <div class="overlay"></div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
 </html>

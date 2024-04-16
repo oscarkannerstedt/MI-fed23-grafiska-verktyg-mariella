@@ -5,7 +5,7 @@ export default function disableButton() {
     const checkBox1 = document.querySelector('.label-box1 input');
     const submitButton = document.getElementById('submitButton');
 
-    form.addEventListener('input', function() {
+    function updateSubmitButtonState() {
         const firstNameFilled = firstnameInput.value.trim() != '';
         const emailFilled = emailInput.value.trim() !== '';
         const checkBoxChecked = checkBox1.checked;
@@ -15,5 +15,9 @@ export default function disableButton() {
         } else {
             submitButton.disabled = true;
         }
-    })
+    }
+    form.addEventListener('input', updateSubmitButtonState);
+    window.onload = function() {
+        updateSubmitButtonState();
+    };
 }

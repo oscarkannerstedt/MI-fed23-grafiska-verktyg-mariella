@@ -95,6 +95,7 @@
   width: 100px;
   height: 36px;
   border: 2px solid #d6e6bc;
+  cursor: pointer;
 }
 
 .button-cancel {
@@ -106,6 +107,7 @@
   margin-left: 4em;
   width: 100px;
   height: 36px;
+  cursor: pointer;
 }
 
 .label-box1 {
@@ -314,7 +316,7 @@
     display: grid;
     margin-inline: 9em;
     background-color: $light-green;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.2fr 1.2fr 1fr 1fr 1fr 1fr;
     gap: 0;
     height: 100vh;
     // width: 100vw;
@@ -396,5 +398,16 @@
     width: 50%;
     padding-left: 0;
     list-style-type: none;
+  }
+
+  .button-send,
+  .button-cancel {
+    border-width: 2px;
+    border-color: $light-gray;
+  }
+  .button-send:hover,
+  .button-cancel:hover {
+    border-width: 2px;
+    border: $light-green;
   }
 }

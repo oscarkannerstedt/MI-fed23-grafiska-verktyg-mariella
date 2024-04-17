@@ -1,4 +1,4 @@
-ändra sidans ipad sec kod .page1 {
+.page1 {
   background-image: url(/assets/skogsbad_blur.jpg);
   background-size: cover;
   background-position: center;
@@ -43,7 +43,7 @@
   background-image: url(/assets/skogsbad_blur.jpg);
   background-size: cover;
   background-position: center;
-  height: calc(120vh - 4em - 5.5em);
+  height: calc(100vh - 4em - 5.5em);
   display: flex;
   flex-direction: column;
   align-items: center;

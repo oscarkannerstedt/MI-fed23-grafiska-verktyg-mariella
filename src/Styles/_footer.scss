@@ -56,8 +56,46 @@
   outline: 2px solid $light-green;
 }
 
+.desktop-leaf-button {
+  position: absolute;
+  bottom: 1.3em;
+  right: 47%;
+}
+
+.desktop-leaf-button {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 150;
+  transition:
+    visibility 0s linear 0.5s,
+    opacity 0.5s linear;
+}
+
+.show-desktop-leaf-button {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+
+@keyframes jump-and-rotate {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0) rotate(180deg);
+  }
+  40% {
+    transform: translateY(-8px) rotate(180deg);
+  }
+  60% {
+    transform: translateY(-5px) rotate(180deg);
+  }
+}
+
 .desktop-leaf-image {
-  display: none;
+  animation: jump-and-rotate 2s infinite;
 }
 
 /* =======================
@@ -89,8 +127,26 @@
     transform: translateX(-50%);
   }
 
-  .desktop-leaf-image {
-    display: none;
+  .desktop-leaf-button {
+    position: absolute;
+    bottom: 6em;
+    right: 2em;
+  }
+
+  .desktop-leaf-button {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 150;
+    transition:
+      visibility 0s linear 0.5s,
+      opacity 0.5s linear;
+  }
+
+  .show-desktop-leaf-button {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
   }
 }
 

@@ -1,3 +1,6 @@
+ändra sidans ipad sec kod
+
+
 .page1 {
   background-image: url(/assets/skogsbad_blur.jpg);
   background-size: cover;
@@ -7,6 +10,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+ 
 }
 
 .contact-titel {
@@ -56,32 +60,34 @@
   border: none;
   border-radius: 10px;
   padding-left: 2em;
-  font-size: $font-size-xs;
+  font-size: 16px;
   font-family: $body-font;
   padding: 20px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 10px;
   width: 80vw;
-  text-align: center;
   margin-block: 1em;
 }
 
+
 .contact-label {
-  padding-right: 5px;
+  margin-right: 2.6em;
+
 }
 #email {
-  margin-right: 13px;
+  margin-right: 3.6em;
 }
 
 .input1 {
   margin-bottom: 5px;
   background-color: #d6e6bc;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 158px;
+  height: 28px;
 }
 
 .button {
-  text-align: center;
   margin-top: 10px;
 }
 
@@ -92,19 +98,23 @@
   border-radius: 10px;
   margin-right: 15px;
   padding: 10px 18px 10px;
+  width: 100px;
+  height: 36px;
+  border:2px solid #d6e6bc;
 }
 
 .button-cancel {
   background-color: #daa520;
   font-family: $body-font;
-  border: none;
+  border:2px solid #d6e6bc;
   border-radius: 10px;
   padding: 10px 18px 10px;
-  margin-left: 15px;
+  margin-left: 4em;
+  width: 100px;
+  height: 36px;
 }
 
 .label-box1 {
-  margin-left: 38px;
   margin-top: 20px;
   line-height: 3;
 }
@@ -125,117 +135,145 @@
 }
 
 .info-title {
-  padding-left: 10px;
+  padding-left: 0;
 }
 
 .contact-info {
   background-color: #293f16;
   font-family: $body-font;
   color: #d6e6bc;
-  font-size: $font-size-s;
+  font-size:18px;
   border: none;
   border-radius: 10px;
   padding-left: 10px;
   padding: 20px;
   font-weight: 400;
   line-height: 1.5;
-  text-align: center;
   width: 80vw;
-  margin-block: 1em;
-  margin-top: -6em;
+  
 }
 
 .list-info {
   list-style-type: none;
-  padding-left: 10px;
+  text-align: start;
+  font-weight: 300;
+  padding-left: 0;
 }
+
 
 /* =======================
         Ipad design
    ======================= */
 
-@media screen and (min-width: 768px) {
-  .page1 {
-    background-image: none;
-    background-color: #293f16;
-  }
+   @media screen and (min-width: 768px){
 
-  .page2 {
-    background-image: none;
-    background-color: #293f16;
-    padding-bottom: 3.8em;
-  }
-
-  .contact-titel {
-    box-shadow: 0 4px 8px rgb(23, 12, 0);
-    height: 112px;
-    width: 560px;
-    padding: 20px 10px 20px;
-  }
-
-  .contact-text1 {
-    font-size: $font-size-l;
-    line-height: 40px;
-    font-weight: 200;
-    height: 194px;
-    width: 550px;
-  }
-
-  .contact-details {
-    box-shadow: 0 4px 8px rgb(23, 12, 0);
-    width: 560px;
-    height: 270px;
-    font-size: 24px;
-    padding: 20px 20px 40px;
-  }
-
-  .input1 {
-    height: 40px;
-    width: 232px;
-
-    .button {
-      margin-left: 1.2em;
-      margin-top: 30px;
+    .contact{
+      background-color: #293f16;
+      width: 70vw;
+      position: absolute;
+      right: 0;  
     }
-  }
-  .button-send {
-    width: 150px;
-    height: 60px;
-    margin-left: -1.8em;
-    font-size: 24px;
-    margin-left: 20px;
-  }
 
-  .button-cancel {
-    width: 150px;
-    height: 60px;
-    font-size: 24px;
-  }
+    .page1{
 
-  .contact-info {
-    height: 112px;
-    width: 700px;
-  }
-  .list-info {
-    margin-top: 10px;
-    font-size: 24px;
-  }
+        background-image: none;
+        background-color: #293f16; 
+        flex-direction: column;
+        align-items: center;
+        display: flex;     
+    }
 
-  .info-title {
-    font-size: 32px;
-    padding: 0;
-  }
+    .page2{
+        background-image: none;
+        background-color: #293f16;
+    }
+    
+    .contact-titel{
+        box-shadow: 0 4px 8px rgb(23, 12, 0) ;
+        width: 50vw;
+        padding: 20px 10px 20px;
+    }
 
-  #email {
-    margin-right: 7em;
-  }
+    .contact-text1{
+        font-size:$font-size-l ;
+        line-height: 40px;
+        font-weight: 200;
+        width: 50vw;
+    }
 
-  .contact-label {
-    margin-right: 6em;
-  }
+    .contact-details{
+        box-shadow: 0 4px 8px rgb(23, 12, 0);
+        width: 50vw;
+        font-size: 24px;
+        padding: 20px 20px 40px;    
 
-  .check-box {
-    width: 12px;
-    height: 11px;
+    }
+
+    .input1{
+        height: 40px;
+        width: 232px;
+        margin-bottom: 20px;
+
+    .button{
+        margin-top: 30px;
+    }
+
+
+    }
+    .button-send{
+        width: 150px;
+        height: 60px;
+        font-size: 24px;      
+
+    }
+
+    .button-cancel{
+        width: 150px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .contact-info{
+        width: 50vw;
+        text-align: start;
+    }
+
+
+    .list-info{
+        margin-top: 10px;
+        font-size: 24px; 
+        
+    }
+
+
+    .info-title{
+        font-size: 32px;
+        padding: 0;
+
+    }
+
+    .contact-label{
+      margin-right: 1em;
+    }
+
+    #email{
+        margin-right: 2em;      
+    }
+
+    .check-box{
+        width: 12px;
+        height: 11px;
+    }
+
+    .label-box1{
+     
+      margin-top: 20px;
+      line-height: 2;
+    }
+
+    .button-cancel{
+      margin-left: 2em;
+    }  
+    
   }
-}
+ 

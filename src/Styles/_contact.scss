@@ -150,11 +150,17 @@
   padding-left: 10px;
 }
 
+.contact-titel-p2 {
+  display: none;
+}
+.contact-text1-p2 {
+  display: none;
+}
+
 /* =======================
         Ipad design
    ======================= */
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .page1 {
     background-image: none;
     background-color: #293f16;
@@ -237,5 +243,143 @@
   .check-box {
     width: 12px;
     height: 11px;
+  }
+}
+
+// DESKTOP
+
+@media (min-width: 1200px) {
+  #contact-container {
+    display: flex;
+  }
+  .contact-titel,
+  .contact-text1 {
+    display: none;
+  }
+
+  .contact-titel-p2,
+  .contact-text1-p2 {
+    display: grid;
+    grid-column: 1 / -1;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-titel-p2 {
+    border-radius: $border-radius-l;
+    color: #d6e6bc;
+    background-color: none;
+    font-weight: 400;
+    font-family: $header-font;
+    font-size: $font-size-xxl;
+    box-shadow: $box-shadow;
+    width: 70%;
+    height: 70%;
+    grid-row: 1;
+  }
+  .contact-text1-p2 {
+    border: none;
+    grid-row: 2;
+    background-color: none;
+    color: #d6e6bc;
+    font-family: $body-font;
+    font-size: $font-size-sm;
+    padding-left: none;
+    padding: none;
+    margin: none;
+    font-weight: 300;
+    line-height: 20px;
+    width: 70%;
+    height: 70%;
+  }
+  .contact-details,
+  .contact-info {
+    grid-row: 3;
+  }
+
+  .contact {
+    display: grid;
+    background-color: $light-green;
+    grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 1fr 10%;
+    gap: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  .page1 {
+    grid-column: 2 / 4;
+    background-image: url(/assets/skogsbad_blur.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(120vh - 4em - 5.5em);
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;
+    margin-right: -20px;
+  }
+  .page2 {
+    grid-column: 4 / 8;
+    background-image: none;
+    background-size: none;
+    background-position: none;
+    background-color: $dark-green;
+    height: calc(120vh - 4em - 5.5em);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-gap: 10px;
+    align-items: center;
+    place-items: center;
+  }
+
+  .contact-details {
+    margin-left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    color: #d6e6bc;
+    border: none;
+    border-radius: 0;
+    padding-left: 0;
+    font-size: $font-size-xs;
+    font-family: $body-font;
+    padding: 0;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    margin-block: 0;
+    box-shadow: $box-shadow;
+    width: 25em;
+    height: 50%;
+  }
+  .contact-info {
+    // margin-left: -50px;
+    width: 50%;
+    background-color: #293f16;
+    font-family: $body-font;
+    color: #d6e6bc;
+    font-size: $font-size-s;
+    border: none;
+    border-radius: 0px;
+    padding-left: 0px;
+    padding: 0px;
+    font-weight: $font-weight-400;
+    line-height: 1.5;
+    text-align: left;
+    margin-block: 0;
+    margin-top: 0;
+  }
+  .info-title {
+    width: 50%;
+    padding-left: 0;
+    font-size: $font-size-sm;
+  }
+  .list-info {
+    width: 50%;
+    padding-left: 0;
+    list-style-type: none;
   }
 }

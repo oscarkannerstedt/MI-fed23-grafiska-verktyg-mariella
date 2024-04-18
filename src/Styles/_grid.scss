@@ -1,0 +1,19 @@
+.start-section {
+  display: grid;
+  height: calc(100vh - 4em - 5.5em);
+  background-image: url(/assets/skogsbad_blur.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.start-section-heading-container,
+.mobile-images-container {
+  margin: 1em;
+}
+
+.app-podcast-youtube-text-container,
+.harmoni-stillhet-frid-container,
+.quote-container {
+  /* This ensures that the second "page" elements are also appropriately spaced */
+  margin: 1em;
+}

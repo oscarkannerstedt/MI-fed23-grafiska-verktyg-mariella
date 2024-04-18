@@ -275,14 +275,30 @@ body.menu-active .overlay {
     margin-inline: 0;
     padding: 0.5em;
     border: 0;
+    position: relative;
   }
 
   .menu li a:hover {
-    // text-decoration: underline 2px;
     color: $dark-brown;
   }
 
   .menu li a::after {
-    content: none;
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 13px;
+    right: 13px;
+    height: 3px;
+    background-color: $dark-brown; /* Color of the bottom border */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+    transform-origin: left center;
+  }
+
+  .menu li a:hover::after {
+    transform: scaleX(1);
+  }
+  .menu li a.active::after {
+    background-color: transparent; /* Makes the bottom border invisible when active */
   }
 }

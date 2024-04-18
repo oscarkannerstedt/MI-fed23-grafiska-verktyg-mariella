@@ -37,7 +37,9 @@ header {
   height: 5px;
   border-radius: $border-radius-s;
   background-color: $dark-brown;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .menu-toggle:checked + .hamburger-menu span:nth-child(1) {

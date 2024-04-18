@@ -157,6 +157,7 @@
     margin-bottom: 0;
     position: fixed;
     left: 0;
+    z-index: 800;
   }
 
   .start-section .quote-container-mobile {
@@ -282,8 +283,8 @@
     .mobile-images-container {
       img {
         margin: 0 10px;
-        height: 150px;
-        width: 80px;
+        height: 130px;
+        width: 60px;
       }
     }
   }
@@ -310,11 +311,23 @@
 
   .app-podcast-youtube-text-container-tablet {
     margin: 0;
+    padding: 14px;
+    width: 85%;
+  }
+
+  .app-podcast-youtube-text-container-tablet p {
+    font-size: 16px;
   }
 
   .start-section .start-section-heading-container {
-    width: auto;
-    padding: 3.5em;
+    width: 100%;
+    padding: 1.5em;
+    margin-block: 1em;
+  }
+
+  .start-section .start-section-heading-container p {
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .harmoni-stillhet-frid-container {
@@ -326,5 +339,15 @@
     position: absolute;
     margin-inline: 36vw;
     margin-top: 66vh;
+  }
+
+  .google-play-badge {
+    height: 65px;
+    width: 170px;
+  }
+
+  .app-store-badge {
+    height: 65px;
+    width: 147px;
   }
 }

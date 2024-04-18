@@ -411,6 +411,7 @@
   }
   .button-send:hover,
   .button-cancel:hover {
-    border: 2px solid $light-green;
+    border-width: 2px;
+    border-color: $light-green;
   }
 }

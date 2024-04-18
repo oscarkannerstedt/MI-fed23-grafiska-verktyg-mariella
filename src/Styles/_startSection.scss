@@ -57,7 +57,6 @@
     background-size: cover;
     background-position: center;
     height: calc(100vh - 4em - 5.5em);
-    margin-bottom: 5.5em;
 
     .app-podcast-youtube-text-container {
       background-color: $light-green;
@@ -120,6 +119,30 @@
 .app-store-badge-button-desktop,
 .google-play-badge-button-desktop {
   display: none;
+}
+
+.desktop-leaf-button-down {
+  display: none;
+}
+
+@keyframes jump {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.desktop-leaf-image-down {
+  animation: jump 2s infinite;
 }
 
 // IPAD
@@ -204,6 +227,14 @@
   .google-play-badge-button-desktop {
     display: none;
   }
+
+  .desktop-leaf-button-down {
+    display: block;
+    position: absolute;
+    margin-inline: 55vw;
+    z-index: 400;
+    margin-top: 60vh;
+  }
 }
 
 //  DESKTOP
@@ -212,7 +243,7 @@
   .start-section {
     display: grid;
     margin-inline: 9em;
-    background-color: $light-green;
+    background-color: $dark-green;
     grid-template-columns: 1.2fr 1.2fr 1fr 1fr 1fr 1fr;
     gap: 0;
   }
@@ -288,5 +319,12 @@
 
   .harmoni-stillhet-frid-container {
     font-size: 48px;
+  }
+
+  .desktop-leaf-button-down {
+    display: block;
+    position: absolute;
+    margin-inline: 36vw;
+    margin-top: 66vh;
   }
 }

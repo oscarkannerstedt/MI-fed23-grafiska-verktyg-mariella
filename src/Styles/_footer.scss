@@ -67,9 +67,7 @@
   opacity: 0;
   position: fixed;
   z-index: 150;
-  transition:
-    visibility 0s linear 0.5s,
-    opacity 0.5s linear;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 
 .show-desktop-leaf-button {
@@ -138,9 +136,7 @@
     opacity: 0;
     position: fixed;
     z-index: 150;
-    transition:
-      visibility 0s linear 0.5s,
-      opacity 0.5s linear;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
   }
 
   .show-desktop-leaf-button {
@@ -156,6 +152,7 @@
 
 @media (min-width: 1200px) {
   .footer {
+    // visibility: hidden;
     height: 50px;
 
     button {

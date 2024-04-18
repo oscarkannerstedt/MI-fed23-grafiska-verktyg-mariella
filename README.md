@@ -16,32 +16,18 @@
 
 ## Screenshots
 
-<!-- ![Start screen mobile]( /assets/screenshots/mobile-start-page.png "Start screen mobile")
+### Mobile
+![Start screen mobile](/assets/screenshots/mobile-start-page.png "Start screen")
 ![Second page mobile](/assets/screenshots/mobile-second-page.png "Second page")
 ![Contact page mobile](/assets/screenshots/mobile-contact-page1.png "Contact page")
-![Contact page mobile](/assets/screenshots/mobile-contact-page2.png "Contact page") -->
+![Contact page mobile](/assets/screenshots/mobile-contact-page2.png "Contact page")
 
-<div style="display: flex; flex-wrap: wrap; max-width: 100%">
-    <div style="flex-basis: 50%;">
-        <img src="/assets/screenshots/mobile-start-page.png" alt="Start screen mobile" style="max-width: 45%;" />
-    </div>
-    <div style="flex-basis: 50%;">
-        <img src="/assets/screenshots/mobile-second-page.png" alt="Second page" style="max-width: 45%;" />
-    </div>
-    <div style="flex-basis: 50%;">
-        <img src="/assets/screenshots/mobile-contact-page1.png" alt="Contact page" style="max-width: 45%;" />
-    </div>
-    <div style="flex-basis: 50%;">
-        <img src="/assets/screenshots/mobile-contact-page2.png" alt="Contact page" style="max-width: 45%;" />
-    </div>
-</div>
+### Tablet
+![Start screen tablet](/assets/screenshots/tablet-start-page.png "Start screen")
+![Contact page tablet](/assets/screenshots/tablet-contact-page1.png "Contact page")
+![Contact page tablet](/assets/screenshots/tablet-contact-page2.png "Contact page")
 
-
-
-
-
-
-
+### Desktop
 
 
 

@@ -21,18 +21,18 @@
 ![Contact page mobile](/assets/screenshots/mobile-contact-page1.png "Contact page")
 ![Contact page mobile](/assets/screenshots/mobile-contact-page2.png "Contact page") -->
 
-<div style="display: flex; flex-wrap: wrap;">
+<div style="display: flex; flex-wrap: wrap; max-width: 100%">
     <div style="flex-basis: 50%;">
-        <img src="/assets/screenshots/mobile-start-page.png" alt="Start screen mobile" style="width: 100%;" />
+        <img src="/assets/screenshots/mobile-start-page.png" alt="Start screen mobile" style="max-width: 45%;" />
     </div>
     <div style="flex-basis: 50%;">
-        <img src="/assets/screenshots/mobile-second-page.png" alt="Second page" style="width: 100%;" />
+        <img src="/assets/screenshots/mobile-second-page.png" alt="Second page" style="max-width: 45%;" />
     </div>
     <div style="flex-basis: 50%;">
-        <img src="/assets/screenshots/mobile-contact-page1.png" alt="Contact page" style="width: 100%;" />
+        <img src="/assets/screenshots/mobile-contact-page1.png" alt="Contact page" style="max-width: 45%;" />
     </div>
     <div style="flex-basis: 50%;">
-        <img src="/assets/screenshots/mobile-contact-page2.png" alt="Contact page" style="width: 100%;" />
+        <img src="/assets/screenshots/mobile-contact-page2.png" alt="Contact page" style="max-width: 45%;" />
     </div>
 </div>
 

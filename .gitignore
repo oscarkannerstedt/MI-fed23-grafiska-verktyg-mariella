@@ -31,6 +31,3 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-src/Styles/styles.css
-src/Styles/styles.css.map

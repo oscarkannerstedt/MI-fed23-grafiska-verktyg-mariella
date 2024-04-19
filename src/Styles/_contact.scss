@@ -1,5 +1,5 @@
 .page1 {
-  background-image: url(/assets/skogsbad_blur.jpg);
+  background-image: url('/assets/skogsbad_blur.jpg');
   background-size: cover;
   background-position: center;
   height: calc(100vh - 4em - 5.5em);
@@ -40,7 +40,7 @@
 }
 
 .page2 {
-  background-image: url(/assets/skogsbad_blur.jpg);
+  background-image: url('/assets/skogsbad_blur.jpg');
   background-size: cover;
   background-position: center;
   height: 90vh;
